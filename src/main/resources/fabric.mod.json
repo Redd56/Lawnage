@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "lawnage",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Lawnage",
+  "description": "This mod adds the lawn block. It is heavily inspired by the mod OffLawn! by Rhodox",
   "authors": [
-    "Me!"
+    "Redd"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "",
+    "sources": "https://github.com/Redd56/Lawnage"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "LGPLv3",
+  "icon": "assets/lawnage/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.redd.lawnage.Main"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "lawnage.mixins.json"
   ],
 
   "depends": {
