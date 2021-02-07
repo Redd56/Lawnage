@@ -4,7 +4,7 @@
   "package": "net.redd.lawnage.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-  "ExampleMixin"
+  "GrassLawnMixin"
   ],
   "injectors": {
     "defaultRequire": 1
