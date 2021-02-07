@@ -1,55 +1,55 @@
-[22:24:11] [main/INFO] (FabricLoader) Loading for game Minecraft 1.16.5
-[22:24:11] [main/INFO] (Fabric|Loader) [FabricLoader] Loading 46 mods: fabric-screen-handler-api-v1@1.1.0+6a2618f53a, fabric-networking-blockentity-v0@0.2.7+a03e98793a, fabric-renderer-api-v1@0.4.0+cbe9176f3a, minecraft@1.16.5, fabric-keybindings-v0@0.2.0+6a2618f53a, fabric-command-api-v1@1.0.9+6a2618f53a, fabricloader@0.11.0, fabric-tool-attribute-api-v1@1.2.5+6a2618f53a, fabric-renderer-indigo@0.4.3+6a2618f53a, fabric-structure-api-v1@1.1.3+cbe9176f3a, fabric-containers-v0@0.1.9+a03e98793a, fabric-dimensions-v1@2.0.1+9a6c75813a, fabric-object-builder-api-v1@1.9.2+6a2618f53a, java@8, fabric-crash-report-info-v1@0.1.2+b7f9825d3a, fabric-events-interaction-v0@0.4.1+6a2618f53a, fabric-item-api-v1@1.2.0+6a2618f53a, lawnage@1.1.0, fabric-game-rule-api-v1@1.0.5+cbe9176f3a, fabric-entity-events-v1@1.0.2+8004b36d3a, fabric-api-base@0.2.0+ab87788d3a, fabric-rendering-v0@1.1.1+6a2618f53a, fabric-key-binding-api-v1@1.0.1+730711c63a, fabric-rendering-v1@1.5.0+c26373133a, fabric-rendering-data-attachment-v1@0.1.4+6a2618f53a, fabric-resource-loader-v0@0.4.1+0d4d7e343a, fabric-textures-v0@1.0.5+6a2618f53a, fabric-content-registries-v0@0.2.0+e77439c73a, fabric-tag-extensions-v0@1.1.0+e77439c73a, fabric-rendering-fluids-v1@0.1.12+6a2618f53a, fabric-biome-api-v1@3.1.0+2e23b97c3a, fabric-commands-v0@0.2.1+cbe9176f3a, fabric-registry-sync-v0@0.7.3+be155ae23a, fabric-blockrenderlayer-v1@1.1.4+6a2618f53a, fabric-lifecycle-events-v1@1.2.0+ffb68a873a, fabric-mining-levels-v0@0.1.2+6a2618f53a, fabric-renderer-registries-v1@2.2.0+6a2618f53a, fabric-networking-api-v1@1.0.0+4358fbc63a, fabric-events-lifecycle-v0@0.2.0+6a2618f53a, fabric-loot-tables-v1@1.0.1+6a2618f53a, fabric@0.29.3+1.16, fabric-models-v0@0.2.0+cbe9176f3a, fabric-particles-v1@0.2.3+cbe9176f3a, fabric-item-groups-v0@0.2.2+cbe9176f3a, fabric-networking-v0@0.3.1+2a4333d33a, fabric-object-builders-v0@0.7.1+6a2618f53a
-[22:24:12] [main/INFO] (mixin) SpongePowered MIXIN Subsystem Version=0.8.2 Source=file:/home/Redd/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.8.2+build.24/e5a741445d0f425bf3cce946c6cf8c7fb8376b2/sponge-mixin-0.8.2+build.24.jar Service=Knot/Fabric Env=CLIENT
-[22:24:12] [main/INFO] (Fabric|MixinBootstrap) Loaded Fabric development mappings for mixin remapper!
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-networking-blockentity-v0-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-screen-handler-api-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-lifecycle-events-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-containers-v0-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-renderer-indigo-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-rendering-data-attachment-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-structure-api-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-events-interaction-v0-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-item-api-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-loot-tables-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-object-builder-api-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-dimensions-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-renderer-registries-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-textures-v0-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-registry-sync-v0-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-models-v0-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-blockrenderlayer-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-renderer-api-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-containers-v0-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-rendering-fluids-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-biome-api-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-resource-loader-v0-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-game-rule-api-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-networking-api-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-particles-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-object-builders-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-tag-extensions-v0-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-tool-attribute-api-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-rendering-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-item-groups-v0-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-content-registries-v0-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-command-api-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-crash-report-info-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-entity-events-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-key-binding-api-v1-refmap.json using remapper chain
-[22:24:12] [main/INFO] (mixin) Remapping refMap fabric-renderer-api-v1-refmap.json using remapper chain
-[22:24:12] [main/WARN] (mixin) @Mixin target net/minecraft/client/render/block/BlockModelRenderer$AmbientOcclusionCalculator is public in fabric-renderer-indigo.mixins.json:MixinAmbientOcclusionCalculator and should be specified in value
-[22:24:12] [main/WARN] (mixin) @Mixin target net/minecraft/client/render/chunk/ChunkBuilder$BuiltChunk$RebuildTask is public in fabric-renderer-indigo.mixins.json:MixinChunkRebuildTask and should be specified in value
-[22:24:12] [main/WARN] (mixin) @Mixin target net/minecraft/village/TradeOffers$TypeAwareBuyForOneEmeraldFactory is public in fabric-object-builder-v1.mixins.json:TypeAwareTradeMixin and should be specified in value
-[22:24:12] [main/WARN] (mixin) @Mixin target net/minecraft/client/font/FontManager$1 is public in fabric-resource-loader-v0.mixins.json:client.FontManagerResourceReloadListenerMixin and should be specified in value
-[22:24:12] [main/WARN] (mixin) @Mixin target net/minecraft/server/command/GameRuleCommand$1 is public in fabric-game-rule-api-v1.mixins.json:GameRuleCommandVisitorMixin and should be specified in value
-[22:24:12] [main/WARN] (mixin) @Mixin target net/minecraft/client/gui/screen/world/EditGameRulesScreen$RuleListWidget$1 is public in fabric-game-rule-api-v1.mixins.json:client.RuleListWidgetVisitorMixin and should be specified in value
-[22:24:12] [main/WARN] (mixin) @Mixin target net/minecraft/server/world/ThreadedAnvilChunkStorage$EntityTracker is public in fabric-networking-api-v1.mixins.json:accessor.EntityTrackerAccessor and should be specified in value
-[22:24:12] [main/WARN] (mixin) @Mixin target net/minecraft/client/particle/ParticleManager$SimpleSpriteProvider is public in fabric-particles-v1.mixins.json:ParticleManagerAccessor$SimpleSpriteProviderAccessor and should be specified in value
-[22:24:12] [main/WARN] (mixin) @Mixin target net/minecraft/tag/Tag$1 is public in fabric-tag-extensions-v0.mixins.json:MixinTagImpl and should be specified in value
-[22:24:12] [main/WARN] (mixin) @Mixin target net/minecraft/tag/RequiredTagList$TagWrapper is public in fabric-tag-extensions-v0.mixins.json:MixinTagImpl and should be specified in value
-[22:24:19] [main/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[22:24:20] [main/ERROR] (Minecraft) Failed to verify authentication
+[15:29:52] [main/INFO] (FabricLoader) Loading for game Minecraft 1.16.5
+[15:29:53] [main/INFO] (Fabric|Loader) [FabricLoader] Loading 46 mods: minecraft@1.16.5, fabric-screen-handler-api-v1@1.1.0+6a2618f53a, fabric-networking-blockentity-v0@0.2.7+a03e98793a, fabric-renderer-api-v1@0.4.0+cbe9176f3a, fabric-keybindings-v0@0.2.0+6a2618f53a, fabric-command-api-v1@1.0.9+6a2618f53a, fabricloader@0.11.0, fabric-tool-attribute-api-v1@1.2.5+6a2618f53a, fabric-structure-api-v1@1.1.3+cbe9176f3a, fabric-renderer-indigo@0.4.3+6a2618f53a, fabric-containers-v0@0.1.9+a03e98793a, fabric-dimensions-v1@2.0.1+9a6c75813a, fabric-object-builder-api-v1@1.9.2+6a2618f53a, java@8, fabric-item-api-v1@1.2.0+6a2618f53a, fabric-crash-report-info-v1@0.1.2+b7f9825d3a, fabric-events-interaction-v0@0.4.1+6a2618f53a, lawnage@1.1.0, fabric-game-rule-api-v1@1.0.5+cbe9176f3a, fabric-entity-events-v1@1.0.2+8004b36d3a, fabric-api-base@0.2.0+ab87788d3a, fabric-rendering-v0@1.1.1+6a2618f53a, fabric-key-binding-api-v1@1.0.1+730711c63a, fabric-rendering-v1@1.5.0+c26373133a, fabric-rendering-data-attachment-v1@0.1.4+6a2618f53a, fabric-resource-loader-v0@0.4.1+0d4d7e343a, fabric-textures-v0@1.0.5+6a2618f53a, fabric-content-registries-v0@0.2.0+e77439c73a, fabric-tag-extensions-v0@1.1.0+e77439c73a, fabric-rendering-fluids-v1@0.1.12+6a2618f53a, fabric-biome-api-v1@3.1.0+2e23b97c3a, fabric-commands-v0@0.2.1+cbe9176f3a, fabric-registry-sync-v0@0.7.3+be155ae23a, fabric-blockrenderlayer-v1@1.1.4+6a2618f53a, fabric-lifecycle-events-v1@1.2.0+ffb68a873a, fabric-mining-levels-v0@0.1.2+6a2618f53a, fabric-renderer-registries-v1@2.2.0+6a2618f53a, fabric-networking-api-v1@1.0.0+4358fbc63a, fabric-events-lifecycle-v0@0.2.0+6a2618f53a, fabric-loot-tables-v1@1.0.1+6a2618f53a, fabric@0.29.3+1.16, fabric-models-v0@0.2.0+cbe9176f3a, fabric-particles-v1@0.2.3+cbe9176f3a, fabric-item-groups-v0@0.2.2+cbe9176f3a, fabric-object-builders-v0@0.7.1+6a2618f53a, fabric-networking-v0@0.3.1+2a4333d33a
+[15:29:53] [main/INFO] (mixin) SpongePowered MIXIN Subsystem Version=0.8.2 Source=file:/home/Redd/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.8.2+build.24/e5a741445d0f425bf3cce946c6cf8c7fb8376b2/sponge-mixin-0.8.2+build.24.jar Service=Knot/Fabric Env=CLIENT
+[15:29:53] [main/INFO] (Fabric|MixinBootstrap) Loaded Fabric development mappings for mixin remapper!
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-networking-blockentity-v0-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-screen-handler-api-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-lifecycle-events-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-containers-v0-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-renderer-indigo-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-rendering-data-attachment-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-structure-api-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-item-api-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-events-interaction-v0-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-loot-tables-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-object-builder-api-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-dimensions-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-renderer-registries-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-textures-v0-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-registry-sync-v0-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-models-v0-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-blockrenderlayer-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-renderer-api-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-containers-v0-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-rendering-fluids-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-biome-api-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-resource-loader-v0-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-game-rule-api-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-networking-api-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-particles-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-object-builders-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-tag-extensions-v0-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-tool-attribute-api-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-rendering-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-item-groups-v0-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-content-registries-v0-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-command-api-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-crash-report-info-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-entity-events-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-key-binding-api-v1-refmap.json using remapper chain
+[15:29:53] [main/INFO] (mixin) Remapping refMap fabric-renderer-api-v1-refmap.json using remapper chain
+[15:29:54] [main/WARN] (mixin) @Mixin target net/minecraft/client/render/block/BlockModelRenderer$AmbientOcclusionCalculator is public in fabric-renderer-indigo.mixins.json:MixinAmbientOcclusionCalculator and should be specified in value
+[15:29:54] [main/WARN] (mixin) @Mixin target net/minecraft/client/render/chunk/ChunkBuilder$BuiltChunk$RebuildTask is public in fabric-renderer-indigo.mixins.json:MixinChunkRebuildTask and should be specified in value
+[15:29:54] [main/WARN] (mixin) @Mixin target net/minecraft/village/TradeOffers$TypeAwareBuyForOneEmeraldFactory is public in fabric-object-builder-v1.mixins.json:TypeAwareTradeMixin and should be specified in value
+[15:29:54] [main/WARN] (mixin) @Mixin target net/minecraft/client/font/FontManager$1 is public in fabric-resource-loader-v0.mixins.json:client.FontManagerResourceReloadListenerMixin and should be specified in value
+[15:29:54] [main/WARN] (mixin) @Mixin target net/minecraft/server/command/GameRuleCommand$1 is public in fabric-game-rule-api-v1.mixins.json:GameRuleCommandVisitorMixin and should be specified in value
+[15:29:54] [main/WARN] (mixin) @Mixin target net/minecraft/client/gui/screen/world/EditGameRulesScreen$RuleListWidget$1 is public in fabric-game-rule-api-v1.mixins.json:client.RuleListWidgetVisitorMixin and should be specified in value
+[15:29:54] [main/WARN] (mixin) @Mixin target net/minecraft/server/world/ThreadedAnvilChunkStorage$EntityTracker is public in fabric-networking-api-v1.mixins.json:accessor.EntityTrackerAccessor and should be specified in value
+[15:29:54] [main/WARN] (mixin) @Mixin target net/minecraft/client/particle/ParticleManager$SimpleSpriteProvider is public in fabric-particles-v1.mixins.json:ParticleManagerAccessor$SimpleSpriteProviderAccessor and should be specified in value
+[15:29:54] [main/WARN] (mixin) @Mixin target net/minecraft/tag/Tag$1 is public in fabric-tag-extensions-v0.mixins.json:MixinTagImpl and should be specified in value
+[15:29:54] [main/WARN] (mixin) @Mixin target net/minecraft/tag/RequiredTagList$TagWrapper is public in fabric-tag-extensions-v0.mixins.json:MixinTagImpl and should be specified in value
+[15:30:01] [main/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[15:30:02] [main/ERROR] (Minecraft) Failed to verify authentication
 com.mojang.authlib.exceptions.AuthenticationUnavailableException: null
 	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.checkPrivileges(YggdrasilSocialInteractionsService.java:97) ~[authlib-2.1.28.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.<init>(YggdrasilSocialInteractionsService.java:40) ~[authlib-2.1.28.jar:?]
@@ -65,99 +65,73 @@ com.mojang.authlib.exceptions.AuthenticationUnavailableException: null
 	at net.fabricmc.loader.launch.knot.Knot.init(Knot.java:139) [fabric-loader-0.11.0@net.fabricmc.yarn.1_16_5.1.16.5+build.1-v2.jar:?]
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:27) [fabric-loader-0.11.0@net.fabricmc.yarn.1_16_5.1.16.5+build.1-v2.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[22:24:20] [main/INFO] (Minecraft) Setting user: Player77
-[22:24:21] [main/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[22:24:21] [main/INFO] (Minecraft) Backend library: LWJGL version 3.2.2 build 10
-[22:24:24] [main/INFO] (Minecraft) Narrator library successfully loaded
-[22:24:24] [main/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric Screen Handler API (v1), Fabric Networking Block Entity (v0), Fabric Renderer API (v1), Fabric Key Bindings (v0), Fabric Command API (v1), Fabric Loader, Fabric Tool Attribute API (v1), Fabric Renderer - Indigo, Fabric Structure API (v1), Fabric Containers (v0), Fabric Object Builder API (v1), Fabric Crash Report Info (v1), Fabric Events Interaction (v0), Fabric Item API (v1), Lawnage, Fabric Game Rule API (v1), Fabric Entity Events (v1), Fabric API Base, Fabric Rendering (v0), Fabric Key Binding API (v1), Fabric Rendering (v1), Fabric Rendering Data Attachment (v1), Fabric Resource Loader (v0), Fabric Textures (v0), Fabric Content Registries (v0), Fabric Tag Extensions (v0), Fabric Rendering Fluids (v1), Fabric Biome API (v1), Fabric Commands (v0), Fabric Registry Sync (v0), Fabric BlockRenderLayer Registration (v1), Fabric Lifecycle Events (v1), Fabric Mining Levels (v0), Fabric Renderer Registries (v1), Fabric Networking API (v1), Fabric Events Lifecycle (v0), Fabric Loot Tables (v1), Fabric API, Fabric Models (v0), Fabric Particles (v1), Fabric Item Groups (v0), Fabric Networking (v0), Fabric Object Builders (v0))
-[22:24:24] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
-[22:24:29] [main/INFO] (Minecraft) OpenAL initialized.
-[22:24:29] [main/INFO] (Minecraft) Sound engine started
-[22:24:30] [main/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
-[22:24:30] [main/INFO] (Minecraft) Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
-[22:24:30] [main/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[22:24:30] [main/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[22:24:30] [main/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[22:24:30] [main/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[22:24:30] [main/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[22:24:31] [main/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[22:24:31] [main/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[22:24:31] [main/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[22:24:46] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[22:24:46] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[22:24:46] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[22:24:46] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[22:24:46] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[22:24:46] [main/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric Tool Attribute API (v1), Lawnage)
-[22:24:46] [Worker-Main-17/ERROR] (Minecraft) Couldn't parse data file lawnage:blocks/mushroomlawn from lawnage:loot_tables/blocks/mushroomlawn.json
-com.google.gson.JsonParseException: java.io.EOFException: End of input at line 1 column 1 path $
-	at net.minecraft.util.JsonHelper.deserialize(JsonHelper.java:286) ~[minecraft-1.16.5-mapped-net.fabricmc.yarn-1.16.5+build.1-v2.jar:?]
-	at net.minecraft.util.JsonHelper.deserialize(JsonHelper.java:327) ~[minecraft-1.16.5-mapped-net.fabricmc.yarn-1.16.5+build.1-v2.jar:?]
-	at net.minecraft.resource.JsonDataLoader.prepare(JsonDataLoader.java:57) ~[minecraft-1.16.5-mapped-net.fabricmc.yarn-1.16.5+build.1-v2.jar:?]
-	at net.minecraft.resource.JsonDataLoader.prepare(JsonDataLoader.java:28) ~[minecraft-1.16.5-mapped-net.fabricmc.yarn-1.16.5+build.1-v2.jar:?]
-	at net.minecraft.resource.SinglePreparationResourceReloadListener.method_18791(SinglePreparationResourceReloadListener.java:13) ~[minecraft-1.16.5-mapped-net.fabricmc.yarn-1.16.5+build.1-v2.jar:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) [?:1.8.0_282]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596) [?:1.8.0_282]
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) [?:1.8.0_282]
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) [?:1.8.0_282]
-	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) [?:1.8.0_282]
-	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175) [?:1.8.0_282]
-Caused by: java.io.EOFException: End of input at line 1 column 1 path $
-	at com.google.gson.stream.JsonReader.nextNonWhitespace(JsonReader.java:1393) ~[gson-2.8.0.jar:?]
-	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:549) ~[gson-2.8.0.jar:?]
-	at com.google.gson.stream.JsonReader.peek(JsonReader.java:425) ~[gson-2.8.0.jar:?]
-	at com.google.gson.internal.bind.TypeAdapters$29.read(TypeAdapters.java:716) ~[gson-2.8.0.jar:?]
-	at com.google.gson.internal.bind.TypeAdapters$29.read(TypeAdapters.java:714) ~[gson-2.8.0.jar:?]
-	at com.google.gson.internal.bind.TypeAdapters$35$1.read(TypeAdapters.java:910) ~[gson-2.8.0.jar:?]
-	at net.minecraft.util.JsonHelper.deserialize(JsonHelper.java:284) ~[minecraft-1.16.5-mapped-net.fabricmc.yarn-1.16.5+build.1-v2.jar:?]
-	... 10 more
-[22:24:46] [main/INFO] (Minecraft) Loaded 7 recipes
-[22:24:47] [main/INFO] (Minecraft) Loaded 927 advancements
-[22:24:47] [main/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 79 new biomes in 2.300 ms
-[22:24:48] [main/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[22:24:48] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.16.5
-[22:24:48] [Server thread/INFO] (Minecraft) Generating keypair
-[22:24:48] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[22:24:49] [main/INFO] (Minecraft) Preparing spawn area: 0%
-[22:24:49] [main/INFO] (Minecraft) Preparing spawn area: 0%
-[22:24:49] [main/INFO] (Minecraft) Preparing spawn area: 0%
-[22:24:50] [main/INFO] (Minecraft) Preparing spawn area: 23%
-[22:24:52] [main/INFO] (Minecraft) Preparing spawn area: 83%
-[22:24:52] [main/INFO] (Minecraft) Preparing spawn area: 83%
-[22:24:52] [main/INFO] (Minecraft) Preparing spawn area: 83%
-[22:24:52] [main/INFO] (Minecraft) Preparing spawn area: 83%
-[22:24:52] [main/INFO] (Minecraft) Preparing spawn area: 83%
-[22:24:53] [main/INFO] (Minecraft) Preparing spawn area: 95%
-[22:24:53] [main/INFO] (Minecraft) Preparing spawn area: 95%
-[22:24:54] [main/INFO] (Minecraft) Preparing spawn area: 97%
-[22:24:54] [main/INFO] (Minecraft) Time elapsed: 5760 ms
-[22:24:54] [Server thread/INFO] (Minecraft) Changing view distance to 11, from 10
-[22:24:55] [Server thread/INFO] (Minecraft) Player77[local:E:3788542f] logged in with entity id 111 at (118.07973275053318, 66.0, 82.84521394879074)
-[22:24:55] [Server thread/INFO] (Minecraft) Player77 joined the game
-[22:24:55] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[22:24:55] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[22:24:56] [main/INFO] (Minecraft) Loaded 9 advancements
-[22:24:56] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[22:24:56] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[22:26:50] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[22:26:50] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[22:26:50] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[22:26:50] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[22:27:01] [main/INFO] (Minecraft) [CHAT] Saved screenshot as 2021-02-06_22.27.01.png
-[22:27:03] [main/ERROR] (Minecraft) [INFO] Hi there
-[22:28:45] [main/INFO] (Minecraft) Stopping!
-[22:28:45] [Server thread/INFO] (Minecraft) Player77 lost connection: Internal Exception: java.nio.channels.ClosedChannelException
-[22:28:45] [Server thread/INFO] (Minecraft) Player77 left the game
-[22:28:45] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
-[22:28:45] [Server thread/INFO] (Minecraft) Stopping server
-[22:28:45] [Server thread/INFO] (Minecraft) Saving players
-[22:28:45] [Server thread/INFO] (Minecraft) Saving worlds
-[22:28:45] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[22:28:45] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World): All chunks are saved
-[22:28:45] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[22:28:45] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[22:28:45] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[22:28:45] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[22:28:45] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World): All chunks are saved
-[22:28:45] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[22:28:45] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15:30:02] [main/INFO] (Minecraft) Setting user: Player364
+[15:30:03] [main/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[15:30:03] [main/INFO] (Minecraft) Backend library: LWJGL version 3.2.2 build 10
+[15:30:06] [main/INFO] (Minecraft) Narrator library successfully loaded
+[15:30:06] [main/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric Screen Handler API (v1), Fabric Networking Block Entity (v0), Fabric Renderer API (v1), Fabric Key Bindings (v0), Fabric Command API (v1), Fabric Loader, Fabric Tool Attribute API (v1), Fabric Structure API (v1), Fabric Renderer - Indigo, Fabric Containers (v0), Fabric Object Builder API (v1), Fabric Item API (v1), Fabric Crash Report Info (v1), Fabric Events Interaction (v0), Lawnage, Fabric Game Rule API (v1), Fabric Entity Events (v1), Fabric API Base, Fabric Rendering (v0), Fabric Key Binding API (v1), Fabric Rendering (v1), Fabric Rendering Data Attachment (v1), Fabric Resource Loader (v0), Fabric Textures (v0), Fabric Content Registries (v0), Fabric Tag Extensions (v0), Fabric Rendering Fluids (v1), Fabric Biome API (v1), Fabric Commands (v0), Fabric Registry Sync (v0), Fabric BlockRenderLayer Registration (v1), Fabric Lifecycle Events (v1), Fabric Mining Levels (v0), Fabric Renderer Registries (v1), Fabric Networking API (v1), Fabric Events Lifecycle (v0), Fabric Loot Tables (v1), Fabric API, Fabric Models (v0), Fabric Particles (v1), Fabric Item Groups (v0), Fabric Object Builders (v0), Fabric Networking (v0))
+[15:30:07] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
+[15:30:13] [main/INFO] (Minecraft) OpenAL initialized.
+[15:30:13] [main/INFO] (Minecraft) Sound engine started
+[15:30:13] [main/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[15:30:14] [main/INFO] (Minecraft) Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[15:30:14] [main/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[15:30:14] [main/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[15:30:14] [main/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[15:30:14] [main/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[15:30:14] [main/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[15:30:14] [main/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[15:30:14] [main/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[15:30:14] [main/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[15:30:21] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[15:30:21] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:30:21] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:30:21] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[15:30:21] [main/WARN] (Minecraft) Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:30:21] [main/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric Tool Attribute API (v1), Lawnage)
+[15:30:22] [main/INFO] (Minecraft) Loaded 7 recipes
+[15:30:22] [main/INFO] (Minecraft) Loaded 927 advancements
+[15:30:22] [main/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 79 new biomes in 3.135 ms
+[15:30:23] [main/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[15:30:23] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.16.5
+[15:30:23] [Server thread/INFO] (Minecraft) Generating keypair
+[15:30:24] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[15:30:25] [main/INFO] (Minecraft) Preparing spawn area: 0%
+[15:30:25] [main/INFO] (Minecraft) Preparing spawn area: 0%
+[15:30:25] [main/INFO] (Minecraft) Preparing spawn area: 0%
+[15:30:25] [main/INFO] (Minecraft) Preparing spawn area: 26%
+[15:30:29] [main/INFO] (Minecraft) Preparing spawn area: 83%
+[15:30:29] [main/INFO] (Minecraft) Preparing spawn area: 83%
+[15:30:29] [main/INFO] (Minecraft) Preparing spawn area: 83%
+[15:30:29] [main/INFO] (Minecraft) Preparing spawn area: 83%
+[15:30:29] [main/INFO] (Minecraft) Preparing spawn area: 83%
+[15:30:29] [main/INFO] (Minecraft) Preparing spawn area: 83%
+[15:30:29] [main/INFO] (Minecraft) Preparing spawn area: 83%
+[15:30:29] [main/INFO] (Minecraft) Preparing spawn area: 95%
+[15:30:30] [main/INFO] (Minecraft) Preparing spawn area: 96%
+[15:30:30] [main/INFO] (Minecraft) Preparing spawn area: 99%
+[15:30:30] [main/INFO] (Minecraft) Time elapsed: 6567 ms
+[15:30:31] [Server thread/INFO] (Minecraft) Changing view distance to 11, from 10
+[15:30:32] [Server thread/INFO] (Minecraft) Player364[local:E:246f3f15] logged in with entity id 107 at (123.76654213618677, 70.0, 85.08415865282953)
+[15:30:32] [Server thread/INFO] (Minecraft) Player364 joined the game
+[15:30:32] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[15:30:32] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[15:30:32] [main/INFO] (Minecraft) Loaded 11 advancements
+[15:30:33] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[15:30:33] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[15:31:05] [main/INFO] (Minecraft) Stopping!
+[15:31:05] [Server thread/INFO] (Minecraft) Player364 lost connection: Disconnected
+[15:31:05] [Server thread/INFO] (Minecraft) Player364 left the game
+[15:31:05] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[15:31:05] [Server thread/INFO] (Minecraft) Stopping server
+[15:31:05] [Server thread/INFO] (Minecraft) Saving players
+[15:31:05] [Server thread/INFO] (Minecraft) Saving worlds
+[15:31:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[15:31:05] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World): All chunks are saved
+[15:31:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[15:31:05] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15:31:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[15:31:05] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15:31:05] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World): All chunks are saved
+[15:31:05] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15:31:05] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
