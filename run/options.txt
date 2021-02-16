@@ -25,13 +25,13 @@ fovEffectScale:1.0
 gamma:0.0
 renderDistance:12
 entityDistanceScaling:1.0
-guiScale:0
+guiScale:3
 particles:0
 maxFps:120
 difficulty:2
 graphicsMode:1
 ao:2
-biomeBlendRadius:2
+biomeBlendRadius:0
 renderClouds:true
 resourcePacks:["Fabric Mods"]
 incompatibleResourcePacks:[]
@@ -73,10 +73,10 @@ key_key.left:key.keyboard.a
 key_key.back:key.keyboard.s
 key_key.right:key.keyboard.d
 key_key.jump:key.keyboard.space
-key_key.sneak:key.keyboard.left.control
-key_key.sprint:key.keyboard.left.shift
-key_key.drop:key.keyboard.e
-key_key.inventory:key.keyboard.q
+key_key.sneak:key.keyboard.left.shift
+key_key.sprint:key.keyboard.left.control
+key_key.drop:key.keyboard.q
+key_key.inventory:key.keyboard.e
 key_key.chat:key.keyboard.t
 key_key.playerlist:key.keyboard.tab
 key_key.pickItem:key.mouse.middle
