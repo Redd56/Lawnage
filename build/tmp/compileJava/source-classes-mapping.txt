@@ -1,4 +1,0 @@
-net/redd/lawnage/mixin/GrassLawnMixin.java
- net.redd.lawnage.mixin.GrassLawnMixin
-net/redd/lawnage/Main.java
- net.redd.lawnage.Main
