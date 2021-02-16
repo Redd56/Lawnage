@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "lawnage:grasslawn"
+      "item": "lawnage:biomegrasslawn"
     }
   ],
   "result": {
-    "item": "lawnage:biomegrasslawn",
+    "item": "lawnage:grasslawn",
     "count": 1
   }
 }

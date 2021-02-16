@@ -45,6 +45,8 @@ public class Main implements ModInitializer {
 
 		Registry.register(Registry.BLOCK, new Identifier("lawnage", "biomegrasslawn"), BiomeGrassLawn);
 		Registry.register(Registry.ITEM, new Identifier("lawnage", "biomegrasslawn"), new BlockItem(BiomeGrassLawn, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+		ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> BiomeColors.getGrassColor(view,pos), BiomeGrassLawn);
+		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> MaterialColor.GRASS.color, BiomeGrassLawn);
 
 		Registry.register(Registry.BLOCK, new Identifier("lawnage", "mushroomlawn"), MushroomLawn);
 		Registry.register(Registry.ITEM, new Identifier("lawnage", "mushroomlawn"), new BlockItem(MushroomLawn, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
@@ -55,8 +57,6 @@ public class Main implements ModInitializer {
 		Registry.register(Registry.BLOCK, new Identifier("lawnage", "crimsonnyliumlawn"), CrimsonNyliumLawn);
 		Registry.register(Registry.ITEM, new Identifier("lawnage", "crimsonnyliumlawn"), new BlockItem(CrimsonNyliumLawn, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
 
-		ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> BiomeColors.getGrassColor(view,pos), BiomeGrassLawn);
-		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> MaterialColor.GRASS.color, BiomeGrassLawn);
 	}
 
 
