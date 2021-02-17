@@ -37,10 +37,9 @@ public class Main implements ModInitializer {
 			.requiresTool().strength(0.4F)
 			.sounds(BlockSoundGroup.NYLIUM));
 
-	public static final ItemGroup LAWNAGE = FabricItemGroupBuilder.create(
-			new Identifier("lawnage", "lawnage"))
-			.icon(() -> new ItemStack(GrassLawn))
-			.build();
+	public static final ItemGroup LAWNAGE = FabricItemGroupBuilder.build(
+			new Identifier("lawnage", "lawnage"),
+			() -> new ItemStack(GrassLawn));
 
 
 	@Override
