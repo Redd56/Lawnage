@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "lawnage:mushroom_lawn",
     "lawnage:warped_nylium_lawn",
     "lawnage:crimson_nylium_lawn"
   ]

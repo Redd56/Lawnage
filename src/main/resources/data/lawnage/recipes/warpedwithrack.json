@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "lawnage:foliage"
+      "tag": "lawnage:warped"
     },
     {
-      "item": "minecraft:dirt"
+      "item": "minecraft:netherrack"
     }
   ],
   "result": {
-    "item": "lawnage:grass_lawn",
+    "item": "lawnage:warped_nylium_lawn",
     "count": 1
   }
 }

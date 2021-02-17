@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "lawnage:block/grasslawn"
+    "all": "lawnage:block/biome_grass_lawn"
   },
   "elements": [
     {

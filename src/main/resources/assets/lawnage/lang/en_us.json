@@ -1,7 +1,7 @@
 {
-  "block.lawnage.grasslawn": "Grass Lawn",
-  "block.lawnage.mushroomlawn": "Mycelium Lawn",
-  "block.lawnage.warpednyliumlawn": "Warped Nylium Lawn",
-  "block.lawnage.crimsonnyliumlawn": "Crimson Nylium Lawn",
-  "block.lawnage.biomegrasslawn": "Biome Based Grass Lawn"
+  "block.lawnage.grass_lawn": "Grass Lawn",
+  "block.lawnage.mushroom_lawn": "Mycelium Lawn",
+  "block.lawnage.warped_nylium_lawn": "Warped Nylium Lawn",
+  "block.lawnage.crimson_nylium_lawn": "Crimson Nylium Lawn",
+  "block.lawnage.biome_grass_lawn": "Biome Based Grass Lawn"
 }

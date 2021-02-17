@@ -1,0 +1,35 @@
+{
+  "replace": false,
+  "values":
+  [
+    "minecraft:warped_fungus",
+    {
+      "id": "minecraft:warped_roots",
+      "required": true
+    },
+    {
+      "id": "minecraft:nether_sprouts",
+      "required": true
+    },
+    {
+      "id": "byg:warped_bush",
+      "required": false
+    },
+    {
+      "id": "minecraft:twisting_vines",
+      "required": true
+    },
+    {
+      "id": "byg:warped_coral",
+      "required": false
+    },
+    {
+      "id": "byg:warped_coral_fan",
+      "required": false
+    },
+    {
+      "id": "byg:warped_cactus",
+      "required": false
+    }
+  ]
+}

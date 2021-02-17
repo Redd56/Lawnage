@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "lawnage:biomegrasslawn"
+          "name": "lawnage:warped_nylium_lawn"
         }
       ],
       "conditions": [

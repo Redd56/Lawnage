@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "lawnage:block/biome_grass_lawn" }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values":
+  [
+    "minecraft:crimson_fungus",
+    {
+      "id": "minecraft:crimson_roots",
+      "required": true
+    },
+    {
+      "id": "minecraft:weeping_vines",
+      "required": true
+    },
+    {
+      "id": "byg:tall_crimson_roots",
+      "required": false
+    },
+    {
+      "id": "byg:crimson_berries",
+      "required": false
+    },
+    {
+      "id": "betternether:wall_moss",
+      "required": false
+    }
+  ]
+}

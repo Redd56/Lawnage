@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class GrassLawnMixin {
 	@Inject(at = @At("HEAD"), method = "canPlantOnTop", cancellable = true)
 	private void init(BlockState floor, BlockView world, BlockPos pos, CallbackInfoReturnable<Boolean> info) {
-		if (floor.isOf(Main.GrassLawn)) {
+		if (floor.isOf(Main.GrassLawn)||floor.isOf(Main.BiomeGrassLawn)) {
 			info.setReturnValue(true);
 		}
 	}

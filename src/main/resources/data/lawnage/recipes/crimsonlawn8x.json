@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "nnn",
+    "ncn",
+    "nnn"
+  ],
+  "key": {
+    "n": {
+      "item": "minecraft:netherrack"
+    },
+    "c": {
+      "item": "minecraft:nether_wart_block"
+    }
+  },
+  "result": {
+    "item": "lawnage:crimson_nylium_lawn",
+    "count": 8
+  }
+}
+

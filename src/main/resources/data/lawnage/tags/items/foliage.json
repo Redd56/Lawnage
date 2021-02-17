@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:fern",
+    {
+      "id": "minecraft:vines",
+      "required": true
+    },
+    {
+      "id": "minecraft:grass",
+      "required": true
+    },
+    {
+      "tag": "minecraft:saplings",
+      "required": true
+    },
+    {
+      "tag": "minecraft:flowers",
+      "required": true
+    },
+    {
+      "tag": "minecraft:leaves",
+      "required": true
+    }
+  ]
+}
