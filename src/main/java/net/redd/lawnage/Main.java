@@ -10,6 +10,7 @@ import net.minecraft.item.*;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.redd.lawnage.modHandlers.BYGModRegistrar;
+import net.redd.lawnage.modHandlers.CSModRegistrar;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -35,6 +36,7 @@ public class Main implements ModInitializer {
 		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> MaterialColor.GRASS.color, SimpleRegistry.registeredBlocks.get("biome_grass_lawn"));
 
 		BYGModRegistrar.INSTANCE.registerVariants();
+		CSModRegistrar.INSTANCE.registerVariants();
 	}
 
 
