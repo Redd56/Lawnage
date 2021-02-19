@@ -1,10 +1,11 @@
-package net.redd.lawnage;
+package net.redd.lawnage.modHandlers;
 
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Material;
 import net.minecraft.block.MaterialColor;
 import net.minecraft.sound.BlockSoundGroup;
+import net.redd.lawnage.SimpleRegistry;
 import org.apache.logging.log4j.Level;
 
 import static net.redd.lawnage.Main.LOGGER;
