@@ -3,64 +3,39 @@ package net.redd.lawnage;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.*;
 import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.item.*;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Main implements ModInitializer {
 
+	public static Logger LOGGER = LogManager.getLogger();
 
-	public static final Block BiomeGrassLawn = new Block(FabricBlockSettings.of(Material.SOIL)
-			.strength(0.6f)
-			.sounds(BlockSoundGroup.GRASS)
-			.breakByTool(FabricToolTags.SHOVELS));
-	public static final Block GrassLawn = new Block(FabricBlockSettings.of(Material.SOIL)
-			.strength(0.6f)
-			.sounds(BlockSoundGroup.GRASS)
-			.breakByTool(FabricToolTags.SHOVELS));
-	public static final Block MushroomLawn = new Block(FabricBlockSettings.of(Material.SOIL)
-			.strength(0.6f)
-			.sounds(BlockSoundGroup.GRASS)
-			.breakByTool(FabricToolTags.SHOVELS));
-	public static final Block WarpedNyliumLawn = new NyliumLawn(AbstractBlock.Settings.of(Material.STONE,
-			MaterialColor.field_25705)
-			.requiresTool().strength(0.4F)
-			.sounds(BlockSoundGroup.NYLIUM));
-	public static final Block CrimsonNyliumLawn = new NyliumLawn(AbstractBlock.Settings.of(Material.STONE,
-			MaterialColor.field_25702)
-			.requiresTool().strength(0.4F)
-			.sounds(BlockSoundGroup.NYLIUM));
+	public static Identifier IDENTIFIER = new Identifier("lawnage", "lawnage");
 
-	public static final ItemGroup LAWNAGE = FabricItemGroupBuilder.build(
-			new Identifier("lawnage", "lawnage"),
-			() -> new ItemStack(GrassLawn));
+	public static final ItemGroup LAWNAGE = FabricItemGroupBuilder.build(IDENTIFIER,
+			() -> new ItemStack(SimpleRegistry.get("grass_lawn")));
 
 
 	@Override
 	public void onInitialize() {
-		Registry.register(Registry.BLOCK, new Identifier("lawnage", "grass_lawn"), GrassLawn);
-		Registry.register(Registry.ITEM, new Identifier("lawnage", "grass_lawn"), new BlockItem(GrassLawn, new FabricItemSettings().group(LAWNAGE)));
+		SimpleRegistry.registerBlockWithItem("grass_lawn", Material.SOIL, 0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, MaterialColor.GRASS);
+		SimpleRegistry.registerBlockWithItem("biome_grass_lawn", Material.SOIL, 0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, MaterialColor.GRASS);
+		SimpleRegistry.registerBlockWithItem("mushroom_lawn", Material.SOIL, 0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, MaterialColor.BROWN);
+		SimpleRegistry.registerBlockWithItem("warped_nylium_lawn", Material.STONE, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.PICKAXES, MaterialColor.field_25705);
+		SimpleRegistry.registerBlockWithItem("crimson_nylium_lawn", Material.STONE, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.PICKAXES, MaterialColor.field_25702);
 
-		Registry.register(Registry.BLOCK, new Identifier("lawnage", "biome_grass_lawn"), BiomeGrassLawn);
-		Registry.register(Registry.ITEM, new Identifier("lawnage", "biome_grass_lawn"), new BlockItem(BiomeGrassLawn, new FabricItemSettings().group(LAWNAGE)));
-		ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> BiomeColors.getGrassColor(view,pos), BiomeGrassLawn);
-		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> MaterialColor.GRASS.color, BiomeGrassLawn);
+		ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> BiomeColors.getGrassColor(view,pos), SimpleRegistry.registeredBlocks.get("biome_grass_lawn"));
+		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> MaterialColor.GRASS.color, SimpleRegistry.registeredBlocks.get("biome_grass_lawn"));
 
-		Registry.register(Registry.BLOCK, new Identifier("lawnage", "mushroom_lawn"), MushroomLawn);
-		Registry.register(Registry.ITEM, new Identifier("lawnage", "mushroom_lawn"), new BlockItem(MushroomLawn, new FabricItemSettings().group(LAWNAGE)));
-
-		Registry.register(Registry.BLOCK, new Identifier("lawnage", "crimson_nylium_lawn"), CrimsonNyliumLawn);
-		Registry.register(Registry.ITEM, new Identifier("lawnage", "crimson_nylium_lawn"), new BlockItem(CrimsonNyliumLawn, new FabricItemSettings().group(LAWNAGE)));
-
-		Registry.register(Registry.BLOCK, new Identifier("lawnage", "warped_nylium_lawn"), WarpedNyliumLawn);
-		Registry.register(Registry.ITEM, new Identifier("lawnage", "warped_nylium_lawn"), new BlockItem(WarpedNyliumLawn, new FabricItemSettings().group(LAWNAGE)));
-
+		BYGModRegistrar.INSTANCE.registerVariants();
 	}
 
 
