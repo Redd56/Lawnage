@@ -3,16 +3,10 @@
   "values":
   [
     "minecraft:crimson_fungus",
+    "minecraft:crimson_roots",
+    "minecraft:weeping_vines",
     {
-      "id": "minecraft:crimson_roots",
-      "required": true
-    },
-    {
-      "id": "minecraft:weeping_vines",
-      "required": true
-    },
-    {
-      "id": "byg:tall_crimson_roots",
+    "id": "byg:tall_crimson_roots",
       "required": false
     },
     {
