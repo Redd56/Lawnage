@@ -20,28 +20,17 @@ public class BYGModRegistrar extends ModRegistrar {
 
     private BYGModRegistrar(){}
 
-    public static HashMap<String, MaterialColor> variants = new HashMap<>();
-
-    public static HashMap<String, Material> materials = new HashMap<>();
+    public static HashMap<String, LawnVariantSettings> variants = new HashMap<>();
 
     static {
-        variants.put("glowcelium_lawn", MaterialColor.GRASS);
-        variants.put("sythian_nylium_lawn", Material.SOLID_ORGANIC.getColor());
-        variants.put("embur_nylium_lawn", MaterialColor.ORANGE);
-        variants.put("ether_phylium_lawn", MaterialColor.PURPLE);
-        variants.put("shulkren_phylium_lawn", MaterialColor.GREEN);
-        variants.put("ivis_phylium_lawn", MaterialColor.PURPLE);
-        variants.put("nightshade_phylium_lawn", MaterialColor.BLUE);
-        variants.put("bulbis_phycelium_lawn", MaterialColor.WHITE);
-
-        materials.put("glowcelium_lawn", Material.SOIL);
-        materials.put("sythian_nylium_lawn", Material.STONE);
-        materials.put("embur_nylium_lawn", Material.STONE);
-        materials.put("ether_phylium_lawn", Material.STONE);
-        materials.put("shulkren_phylium_lawn", Material.STONE);
-        materials.put("ivis_phylium_lawn", Material.STONE);
-        materials.put("nightshade_phylium_lawn", Material.STONE);
-        materials.put("bulbis_phycelium_lawn", Material.STONE);
+        variants.put("glowcelium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
+        variants.put("sythian_nylium_lawn", new LawnVariantSettings(Material.SOIL, Material.SOLID_ORGANIC.getColor(), 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
+        variants.put("embur_nylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
+        variants.put("ether_phylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
+        variants.put("shulkren_phylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
+        variants.put("ivis_phylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
+        variants.put("nightshade_phylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
+        variants.put("bulbis_phycelium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
     }
 
     @Override
@@ -53,7 +42,8 @@ public class BYGModRegistrar extends ModRegistrar {
         LOGGER.log(Level.INFO, "Registering variants from mod byg");
         for(String variant : variants.keySet()){
             LOGGER.log(Level.INFO, "Registering variant byg:" + variant);
-            SimpleRegistry.registerBlockWithItem(variant, materials.get(variant), 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, variants.get(variant));
+            LawnVariantSettings lvs = variants.get(variant);
+            SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.color);
         }
     }
 
