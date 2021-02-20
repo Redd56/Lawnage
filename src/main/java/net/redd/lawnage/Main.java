@@ -35,7 +35,7 @@ public class Main implements ModInitializer {
 		ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> BiomeColors.getGrassColor(view,pos), SimpleRegistry.registeredBlocks.get("biome_grass_lawn"));
 		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> MaterialColor.GRASS.color, SimpleRegistry.registeredBlocks.get("biome_grass_lawn"));
 
-		BYGModRegistrar.INSTANCE.registerVariants();
+		//BYGModRegistrar.INSTANCE.registerVariants();
 		CSModRegistrar.INSTANCE.registerVariants();
 	}
 
