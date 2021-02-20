@@ -36,7 +36,7 @@ public class BYGModRegistrar extends ModRegistrar {
     @Override
     public void registerVariants() {
         if(!FabricLoader.getInstance().isModLoaded(mod_id)) {
-            LOGGER.log(Level.INFO, "Mod byg is not present, skipping variants for that mod");
+            LOGGER.log(Level.INFO, "Mod byg is not present, CORGI is sad and we are skipping variants for that mod");
             return;
         }
         LOGGER.log(Level.INFO, "Registering variants from mod byg");
