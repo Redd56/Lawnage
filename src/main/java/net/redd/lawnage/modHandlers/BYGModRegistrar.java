@@ -23,14 +23,14 @@ public class BYGModRegistrar extends ModRegistrar {
     public static HashMap<String, LawnVariantSettings> variants = new HashMap<>();
 
     static {
-        variants.put("glowcelium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
-        variants.put("sythian_nylium_lawn", new LawnVariantSettings(Material.SOIL, Material.SOLID_ORGANIC.getColor(), 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
-        variants.put("embur_nylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
-        variants.put("ether_phylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
-        variants.put("shulkren_phylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
-        variants.put("ivis_phylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
-        variants.put("nightshade_phylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
-        variants.put("bulbis_phycelium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
+//        variants.put("glowcelium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
+//        variants.put("sythian_nylium_lawn", new LawnVariantSettings(Material.SOIL, Material.SOLID_ORGANIC.getColor(), 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
+//        variants.put("embur_nylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
+//        variants.put("ether_phylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
+//        variants.put("shulkren_phylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
+//        variants.put("ivis_phylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
+//        variants.put("nightshade_phylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
+//        variants.put("bulbis_phycelium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
     }
 
     @Override

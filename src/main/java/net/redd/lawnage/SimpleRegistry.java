@@ -1,5 +1,6 @@
 package net.redd.lawnage;
 
+import net.devtech.arrp.json.recipe.JRecipe;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
@@ -28,7 +29,12 @@ public class SimpleRegistry {
         Registry.register(Registry.ITEM, id, bi);
         registeredBlocks.put(id.getPath(), block);
         registeredItems.put(id.getPath(), bi);
+        path += "_recipe";
 
+    }
+
+    public static void registerRecipe(Identifier id, JRecipe recipe){
+        Main.LAWNAGE_PACK.addRecipe(id, recipe);
     }
 
     public static Block get(String path) { return registeredBlocks.get(path); }
