@@ -1,8 +1,5 @@
 package net.redd.lawnage.modHandlers;
 
-import net.devtech.arrp.json.recipe.JRecipe;
-import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
-import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.block.MaterialColor;
 import net.minecraft.item.Item;
@@ -16,15 +13,13 @@ public class LawnVariantSettings {
     public float strength;
     public BlockSoundGroup sound;
     public Tag<Item> tool;
-    public JRecipe recipe;
 
-    public LawnVariantSettings(Material mat, MaterialColor color, float strength, BlockSoundGroup sound, Tag<Item> tool, JRecipe recipe){
+    public LawnVariantSettings(Material mat, MaterialColor color, float strength, BlockSoundGroup sound, Tag<Item> tool){
         this.mat = mat;
         this.color = color;
         this.strength = strength;
         this.sound = sound;
         this.tool = tool;
-        this.recipe = recipe;
     }
 
 }

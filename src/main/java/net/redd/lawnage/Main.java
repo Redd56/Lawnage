@@ -43,14 +43,22 @@ public class Main implements ModInitializer {
 			registerRecipe(new Identifier("lawnage","mushroom_lawn"), JRecipe.shapeless(JIngredients.ingredients().add(JIngredient.ingredient().item(Items.MYCELIUM)), JResult.item(get("mushroom_lawn").asItem())));
 		registerBlockWithItem("warped_nylium_lawn", Material.STONE, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.PICKAXES, MaterialColor.field_25705);
 				registerRecipe(new Identifier("lawnage","warped_nylium_lawn"), JRecipe.shapeless(JIngredients.ingredients().add(JIngredient.ingredient().item(Items.WARPED_NYLIUM)), JResult.item(get("warped_nylium_lawn").asItem())));
-		registerBlockWithItem("crimson_nylium", Material.STONE, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.PICKAXES, MaterialColor.field_25702);
-				JRecipe.shapeless(JIngredients.ingredients().add(JIngredient.ingredient().item(Items.CRIMSON_NYLIUM)), JResult.item(get("crimson_nylium_lawn").asItem()));
+		registerBlockWithItem("crimson_nylium_lawn", Material.STONE, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.PICKAXES, MaterialColor.field_25702);
+				registerRecipe(new Identifier("lawnage", "crimson_nylium_to_lawn"), JRecipe.shapeless(JIngredients.ingredients().add(JIngredient.ingredient().item(Items.CRIMSON_NYLIUM)), JResult.item(get("crimson_nylium_lawn").asItem())));
+
+
+
 
 		ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> BiomeColors.getGrassColor(view,pos), registeredBlocks.get("biome_grass_lawn"));
 		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> MaterialColor.GRASS.color, registeredBlocks.get("biome_grass_lawn"));
 
 		//BYGModRegistrar.INSTANCE.registerVariants();
 		CSModRegistrar.INSTANCE.registerVariants();
+
+		SimpleRegistry.registerRecipe(new Identifier("lawnage", "umbral_nylium_lawn_nylium_to_lawn"),
+				JRecipe.shapeless(JIngredients.ingredients()
+								.add(JIngredient.ingredient().item(Items.GRASS_BLOCK)),
+						JResult.item(SimpleRegistry.get("umbral_nylium_lawn").asItem())));
 
 
 //		LAWNAGE_PACK.addRecipe(new Identifier("cns", "grass_lawn"),

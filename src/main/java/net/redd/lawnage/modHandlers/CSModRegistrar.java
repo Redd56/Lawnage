@@ -10,8 +10,10 @@ import net.minecraft.block.Material;
 import net.minecraft.block.MaterialColor;
 import net.minecraft.item.Items;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.Identifier;
 import net.redd.lawnage.SimpleRegistry;
 import org.apache.logging.log4j.Level;
+import sun.java2d.pipe.SpanShapeRenderer;
 
 import java.util.HashMap;
 
@@ -28,9 +30,8 @@ public class CSModRegistrar extends ModRegistrar {
     public static HashMap<String, LawnVariantSettings> variants = new HashMap<>();
 
     static {
-        variants.put("umbral_nylium_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.BLUE, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, JRecipe.shapeless(JIngredients.ingredients()
-                        .add(JIngredient.ingredient().item(Items.GRASS_BLOCK)),
-                JResult.item(SimpleRegistry.get("ubral_nylium_lawn").asItem()))));
+        variants.put("umbral_nylium_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.BLUE, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES));
+
     }
 
     @Override
