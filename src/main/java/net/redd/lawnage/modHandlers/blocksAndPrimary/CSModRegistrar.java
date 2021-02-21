@@ -1,4 +1,4 @@
-package net.redd.lawnage.modHandlers;
+package net.redd.lawnage.modHandlers.blocksAndPrimary;
 
 import net.devtech.arrp.json.recipe.JIngredient;
 import net.devtech.arrp.json.recipe.JIngredients;
@@ -12,8 +12,9 @@ import net.minecraft.item.Items;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.redd.lawnage.SimpleRegistry;
+import net.redd.lawnage.modHandlers.LawnVariantSettings;
+import net.redd.lawnage.modHandlers.ModRegistrar;
 import org.apache.logging.log4j.Level;
-import sun.java2d.pipe.SpanShapeRenderer;
 
 import java.util.HashMap;
 
@@ -37,14 +38,21 @@ public class CSModRegistrar extends ModRegistrar {
     @Override
     public void registerVariants() {
         if(!FabricLoader.getInstance().isModLoaded(mod_id)) {
-            LOGGER.log(Level.INFO, "Mod cinderscapes is not present, skipping variants for that mod");
+            LOGGER.log(Level.INFO, "LAWNAGE: Mod cinderscapes is not present, skipping addon for that mod");
             return;
         }
-        LOGGER.log(Level.INFO, "Registering variants from mod cinderscapes");
+        LOGGER.log(Level.INFO, "LAWNAGE: Registering variants from mod cinderscapes addon");
         for(String variant : variants.keySet()){
-            LOGGER.log(Level.INFO, "Registering variant cinderscapes:" + variant);
-            LawnVariantSettings lvs = variants.get(variant);
-            SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.color);
+            LOGGER.log(Level.INFO, "LAWNAGE: Registering variant cinderscapes:" + variant);
+            //call recipe class here
+
+//            LawnVariantSettings lvs = variants.get(variant);
+//            SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.color);
+//            SimpleRegistry.registerRecipe(new Identifier("lawnage", "umbral_nylium_lawn_nylium_to_lawn"),
+//                    JRecipe.shapeless(JIngredients.ingredients()
+//                                    .add(JIngredient.ingredient().item(Items.GRASS_BLOCK).tag("lawnage:foliage")),
+//                            JResult.item(SimpleRegistry.get("umbral_nylium_lawn").asItem())));
+//            LOGGER.log(Level.INFO,"LAWNAGE: recipes loaded for cinderscapes addon");
         }
     }
 

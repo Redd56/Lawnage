@@ -15,8 +15,7 @@ import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.item.*;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import net.redd.lawnage.modHandlers.BYGModRegistrar;
-import net.redd.lawnage.modHandlers.CSModRegistrar;
+import net.redd.lawnage.modHandlers.blocksAndPrimary.CSModRegistrar;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -55,10 +54,7 @@ public class Main implements ModInitializer {
 		//BYGModRegistrar.INSTANCE.registerVariants();
 		CSModRegistrar.INSTANCE.registerVariants();
 
-		SimpleRegistry.registerRecipe(new Identifier("lawnage", "umbral_nylium_lawn_nylium_to_lawn"),
-				JRecipe.shapeless(JIngredients.ingredients()
-								.add(JIngredient.ingredient().item(Items.GRASS_BLOCK)),
-						JResult.item(SimpleRegistry.get("umbral_nylium_lawn").asItem())));
+
 
 
 //		LAWNAGE_PACK.addRecipe(new Identifier("cns", "grass_lawn"),
