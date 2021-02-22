@@ -44,15 +44,8 @@ public class CSModRegistrar extends ModRegistrar {
         LOGGER.log(Level.INFO, "LAWNAGE: Registering variants from mod cinderscapes addon");
         for(String variant : variants.keySet()){
             LOGGER.log(Level.INFO, "LAWNAGE: Registering variant cinderscapes:" + variant);
-            //call recipe class here
-
-//            LawnVariantSettings lvs = variants.get(variant);
-//            SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.color);
-//            SimpleRegistry.registerRecipe(new Identifier("lawnage", "umbral_nylium_lawn_nylium_to_lawn"),
-//                    JRecipe.shapeless(JIngredients.ingredients()
-//                                    .add(JIngredient.ingredient().item(Items.GRASS_BLOCK).tag("lawnage:foliage")),
-//                            JResult.item(SimpleRegistry.get("umbral_nylium_lawn").asItem())));
-//            LOGGER.log(Level.INFO,"LAWNAGE: recipes loaded for cinderscapes addon");
+            LawnVariantSettings lvs = variants.get(variant);
+            SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.color);
         }
     }
 

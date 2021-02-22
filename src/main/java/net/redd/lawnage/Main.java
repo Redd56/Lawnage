@@ -2,20 +2,21 @@ package net.redd.lawnage;
 
 import net.devtech.arrp.api.RRPCallback;
 import net.devtech.arrp.api.RuntimeResourcePack;
-import net.devtech.arrp.json.recipe.JIngredient;
-import net.devtech.arrp.json.recipe.JIngredients;
-import net.devtech.arrp.json.recipe.JRecipe;
-import net.devtech.arrp.json.recipe.JResult;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
-import net.minecraft.block.*;
+import net.minecraft.block.Material;
+import net.minecraft.block.MaterialColor;
 import net.minecraft.client.color.world.BiomeColors;
-import net.minecraft.item.*;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.redd.lawnage.modHandlers.blocksAndPrimary.BYGModRegistrar;
 import net.redd.lawnage.modHandlers.blocksAndPrimary.CSModRegistrar;
+import net.redd.lawnage.recipes.BaseRecipes;
+import net.redd.lawnage.recipes.CinderscapesRecipes;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -34,33 +35,36 @@ public class Main implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		/*
+		 * Lawnage Lawn type registration
+		*/
 		registerBlockWithItem("grass_lawn", Material.SOIL, 0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, MaterialColor.GRASS);
-			registerRecipe(new Identifier("lawnage","grass_lawn"), JRecipe.shapeless(JIngredients.ingredients().add(JIngredient.ingredient().item(Items.GRASS_BLOCK)), JResult.item(get("grass_lawn").asItem())));
 		registerBlockWithItem("biome_grass_lawn", Material.SOIL, 0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, MaterialColor.GRASS);
-			registerRecipe(new Identifier("lawnage","biome_grass_lawn"), JRecipe.shapeless(JIngredients.ingredients().add(JIngredient.ingredient().item(get("grass_lawn").asItem())), JResult.item(get("biome_grass_lawn").asItem())));
 		registerBlockWithItem("mushroom_lawn", Material.SOIL, 0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, MaterialColor.BROWN);
-			registerRecipe(new Identifier("lawnage","mushroom_lawn"), JRecipe.shapeless(JIngredients.ingredients().add(JIngredient.ingredient().item(Items.MYCELIUM)), JResult.item(get("mushroom_lawn").asItem())));
 		registerBlockWithItem("warped_nylium_lawn", Material.STONE, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.PICKAXES, MaterialColor.field_25705);
-				registerRecipe(new Identifier("lawnage","warped_nylium_lawn"), JRecipe.shapeless(JIngredients.ingredients().add(JIngredient.ingredient().item(Items.WARPED_NYLIUM)), JResult.item(get("warped_nylium_lawn").asItem())));
 		registerBlockWithItem("crimson_nylium_lawn", Material.STONE, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.PICKAXES, MaterialColor.field_25702);
-				registerRecipe(new Identifier("lawnage", "crimson_nylium_to_lawn"), JRecipe.shapeless(JIngredients.ingredients().add(JIngredient.ingredient().item(Items.CRIMSON_NYLIUM)), JResult.item(get("crimson_nylium_lawn").asItem())));
-
-
-
 
 		ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> BiomeColors.getGrassColor(view,pos), registeredBlocks.get("biome_grass_lawn"));
 		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> MaterialColor.GRASS.color, registeredBlocks.get("biome_grass_lawn"));
 
-		//BYGModRegistrar.INSTANCE.registerVariants();
+		/*
+		 * Lawnage Recipe Registration
+		*/
+		BaseRecipes.INSTANCE.registerRecipes();
+
+		/*
+		 * Mod support Lawn type registration
+		*/
+
+		BYGModRegistrar.INSTANCE.registerVariants();
 		CSModRegistrar.INSTANCE.registerVariants();
 
+		/*
+		 * Mod support Recipe registration
+		*/
+		CinderscapesRecipes.INSTANCE.registerRecipes();
 
 
-
-//		LAWNAGE_PACK.addRecipe(new Identifier("cns", "grass_lawn"),
-//				JRecipe.shapeless(JIngredients.ingredients()
-//					.add(JIngredient.ingredient().item(Items.GRASS_BLOCK)),
-//					JResult.item(get("grass_lawn").asItem())));
 
 		RRPCallback.EVENT.register(a -> a.add(LAWNAGE_PACK));
 	}
