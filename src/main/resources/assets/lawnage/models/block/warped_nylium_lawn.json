@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "lawnage:block/warped_lawn"
+    "all": "lawnage:block/warped_nylium_lawn"
   }
 }

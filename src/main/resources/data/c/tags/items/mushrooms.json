@@ -8,10 +8,6 @@
       "required": true
     },
     {
-      "id": "byg:green_mushroom",
-      "required": false
-    },
-    {
     "id": "betternether:wall_mushroom_brown",
     "required": false
     },
