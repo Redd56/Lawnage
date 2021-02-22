@@ -28,7 +28,7 @@ public class BYGModRegistrar extends ModRegistrar {
         variants.put("sythian_nylium_lawn", new LawnVariantSettings(Material.STONE, Material.SOLID_ORGANIC.getColor(), 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
         variants.put("embur_nylium_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
         variants.put("ether_phylium_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
-        variants.put("shulkren_phylium_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
+        variants.put("shulkren_phylium_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.STONE, FabricToolTags.PICKAXES));
         variants.put("ivis_phylium_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.STONE, FabricToolTags.PICKAXES));
         variants.put("nightshade_phylium_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS));
         variants.put("bulbis_phycelium_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.SHOVELS));
