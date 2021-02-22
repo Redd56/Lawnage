@@ -1,0 +1,11 @@
+If you would like to contribute to our mod then you just need to follow the example files that are in the src folder
+
+Feel free to submit a pull request with your revisions/aditions and we will review and process your request when we have time
+
+Rules for contributing:
+- You MUST follow all conventional Java structures and styling rules
+- You must follow all Java naming conventions
+  - Class names must be cammel cased: ThisIsanExampleClassName
+  - Method names must be headless cammel cased: thisIsAMethodName()
+    - Capitalizing single letter words is not mandatory but recommended
+- Do not rename anything that doesn't absolutely need to be
