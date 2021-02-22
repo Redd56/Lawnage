@@ -17,6 +17,6 @@ We are absolutely planing on adding more mod support and are totally willing to 
 ### If you are a mod creator that wants to have lawn types in our mod, feel free to create a [post](https://github.com/Redd56/Lawnage/issues) for your mod and what you're requesting
 
 # Contributing
-For information on contributing, please visit (CONTRIBUTING.md)[https://github.com/Redd56/Lawnage/blob/master/CONTRIBUTING]
+For information on contributing, please visit [CONTRIBUTING.md](https://github.com/Redd56/Lawnage/blob/master/CONTRIBUTING)
 
 
