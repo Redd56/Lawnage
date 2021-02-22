@@ -1,4 +1,4 @@
-package net.redd.lawnage.recipes;
+package net.redd.lawnage.modHandlers.recipes;
 
 import net.devtech.arrp.json.recipe.JIngredient;
 import net.devtech.arrp.json.recipe.JIngredients;
@@ -23,7 +23,8 @@ public class BaseRecipes extends RecipeLoader {
         registerRecipe(new Identifier("lawnage","grass_lawn"), JRecipe.shapeless(JIngredients.ingredients().add(JIngredient.ingredient().item(Items.GRASS_BLOCK)), JResult.item(get("grass_lawn").asItem())));
         registerRecipe(new Identifier("lawnage","grass_lawn_foliage"), JRecipe.shapeless(JIngredients.ingredients().add(JIngredient.ingredient().item(Items.GRASS_BLOCK)).add(JIngredient.ingredient().tag("lawnage:foliage")), JResult.item(get("grass_lawn").asItem())));
 
-        registerRecipe(new Identifier("lawnage","biome_grass_lawn"), JRecipe.shapeless(JIngredients.ingredients().add(JIngredient.ingredient().item(get("grass_lawn").asItem())), JResult.item(get("biome_grass_lawn").asItem())));
+        registerRecipe(new Identifier("lawnage","biome_grass_lawn"),
+                JRecipe.shapeless(JIngredients.ingredients().add(JIngredient.ingredient().item(get("grass_lawn").asItem())), JResult.item(get("biome_grass_lawn").asItem())));
 
         registerRecipe(new Identifier("lawnage","mushroom_lawn"), JRecipe.shapeless(JIngredients.ingredients().add(JIngredient.ingredient().item(Items.MYCELIUM)), JResult.item(get("mushroom_lawn").asItem())));
 

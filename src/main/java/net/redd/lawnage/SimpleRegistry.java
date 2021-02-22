@@ -28,7 +28,6 @@ public class SimpleRegistry {
         Registry.register(Registry.ITEM, id, bi);
         registeredBlocks.put(id.getPath(), block);
         registeredItems.put(id.getPath(), bi);
-        path += "_recipe";
 
     }
 

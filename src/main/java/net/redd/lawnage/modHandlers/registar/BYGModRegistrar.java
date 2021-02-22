@@ -1,4 +1,4 @@
-package net.redd.lawnage.modHandlers.blocksAndPrimary;
+package net.redd.lawnage.modHandlers.registar;
 
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.fabricmc.loader.api.FabricLoader;

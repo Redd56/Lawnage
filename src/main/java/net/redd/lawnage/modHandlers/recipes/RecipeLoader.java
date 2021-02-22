@@ -1,4 +1,4 @@
-package net.redd.lawnage.recipes;
+package net.redd.lawnage.modHandlers.recipes;
 
 public abstract class RecipeLoader {
 

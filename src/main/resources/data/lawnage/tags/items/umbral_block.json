@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values":
+  [
+    {
+      "id": "cinderscapes:umbral_flesh_block",
+      "required": false
+    },
+    {
+      "id": "cinderscapes:umbral_wart_block",
+      "required": false
+    }
+  ]
+}
