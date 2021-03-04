@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "lawnage:block/embur_nylium_lawn"
+  }
+}
