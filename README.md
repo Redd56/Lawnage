@@ -2,7 +2,7 @@
 Welcome to lawnage! The primary function of this mod is to provide "Lawn" block types that are supposed to resemble "Mowed Lawn" for certain blocks.
 
 # What kind of blocks are "Lawnable"?
-Lawnage lets blocks like grass, mycelium, warped nylium and crimson nylium have lawn variants which have slightly different properties to the origional block
+Lawnage lets blocks like grass, mycelium, warped nylium and crimson nylium have lawn variants which have slightly different properties to the original block
 
 # What does a lawn block do?
 Lawn blocks are nearly entirely decorational and can be used to give your build that "tidy" look you were searchinng for!
