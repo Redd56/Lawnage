@@ -14,14 +14,16 @@ public class LawnVariantSettings {
     public BlockSoundGroup sound;
     public Tag<Item> tool;
     public int toolLevel;
+    public boolean requiresTool;
 
-    public LawnVariantSettings(Material mat, MaterialColor color, float strength, BlockSoundGroup sound, Tag<Item> tool, int toolLevel){
+    public LawnVariantSettings(Material mat, MaterialColor color, float strength, BlockSoundGroup sound, Tag<Item> tool, int toolLevel,boolean requiresTool){
         this.mat = mat;
         this.color = color;
         this.strength = strength;
         this.sound = sound;
         this.tool = tool;
         this.toolLevel = toolLevel;
+        this.requiresTool = requiresTool;
     }
 
 }

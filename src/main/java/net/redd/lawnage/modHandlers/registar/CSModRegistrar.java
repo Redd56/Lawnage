@@ -1,4 +1,4 @@
-package net.redd.lawnage.modHandlers.blocksAndPrimary;
+package net.redd.lawnage.modHandlers.registar;
 
 import net.devtech.arrp.json.recipe.JIngredient;
 import net.devtech.arrp.json.recipe.JIngredients;
@@ -31,7 +31,7 @@ public class CSModRegistrar extends ModRegistrar {
     public static HashMap<String, LawnVariantSettings> variants = new HashMap<>();
 
     static {
-        variants.put("umbral_nylium_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.BLUE, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1));
+        variants.put("umbral_nylium_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.BLUE, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
 
     }
 
@@ -45,7 +45,7 @@ public class CSModRegistrar extends ModRegistrar {
         for(String variant : variants.keySet()){
             LOGGER.log(Level.INFO, "LAWNAGE: Registering variant cinderscapes:" + variant);
             LawnVariantSettings lvs = variants.get(variant);
-            SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.toolLevel, lvs.color);
+            SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.toolLevel, lvs.color, lvs.requiresTool);
         }
     }
 
