@@ -23,8 +23,10 @@ public class SimpleRegistry {
     public static HashMap<String, Block> registeredBlocks = new HashMap<>();
     public static HashMap<String, BlockItem> registeredItems = new HashMap<>();
 
-    public static void registerBlockWithItem(String path, Material mat, float strength, BlockSoundGroup sounds, Tag<Item> toolTags, int toolLevel, MaterialColor color){
-        Block block = new Block(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds).breakByTool(toolTags, toolLevel).requiresTool());
+    public static void registerBlockWithItem(String path, Material mat, float strength, BlockSoundGroup sounds, Tag<Item> toolTags, int toolLevel, MaterialColor color, boolean requiresTool){
+        Block block = (requiresTool)
+                ? new Block(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds).breakByTool(toolTags, toolLevel).requiresTool())
+                : new Block(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds).breakByTool(toolTags, toolLevel));
         Identifier id = new Identifier("lawnage", path);
         BlockItem bi = new BlockItem(block, new FabricItemSettings().group(Main.LAWNAGE));
         Registry.register(Registry.BLOCK, id, block);
