@@ -13,6 +13,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.redd.lawnage.modHandlers.registar.BEModRegistrar;
 import net.redd.lawnage.modHandlers.registar.BYGModRegistrar;
 import net.redd.lawnage.modHandlers.registar.CSModRegistrar;
 import org.apache.logging.log4j.LogManager;
@@ -56,6 +57,7 @@ public class Main implements ModInitializer {
 
 		BYGModRegistrar.INSTANCE.registerVariants();
 		CSModRegistrar.INSTANCE.registerVariants();
+		BEModRegistrar.INSTANCE.registerVariants();
 
 		/*
 		 * Mod support Recipe registration

@@ -33,6 +33,7 @@ dependencies {
 
 	//for stuff in libs folder
 	compile files('libs/bn-dev.jar')
+	compile files('libs/be-dev.jar')
 }
 
 processResources {
