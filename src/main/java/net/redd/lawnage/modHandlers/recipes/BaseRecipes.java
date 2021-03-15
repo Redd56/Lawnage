@@ -1,4 +1,4 @@
-package net.redd.lawnage.recipes;
+package net.redd.lawnage.modHandlers.recipes;
 
 import net.devtech.arrp.json.recipe.JIngredient;
 import net.devtech.arrp.json.recipe.JIngredients;

@@ -1,6 +1,9 @@
 package net.redd.lawnage;
 
+import net.devtech.arrp.json.recipe.JIngredient;
+import net.devtech.arrp.json.recipe.JIngredients;
 import net.devtech.arrp.json.recipe.JRecipe;
+import net.devtech.arrp.json.recipe.JResult;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -21,7 +24,7 @@ public class SimpleRegistry {
     public static HashMap<String, BlockItem> registeredItems = new HashMap<>();
 
     public static void registerBlockWithItem(String path, Material mat, float strength, BlockSoundGroup sounds, Tag<Item> toolTags, int toolLevel, MaterialColor color){
-        Block block = new Block(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds).breakByTool(toolTags, toolLevel));
+        Block block = new Block(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds).breakByTool(toolTags, toolLevel).requiresTool());
         Identifier id = new Identifier("lawnage", path);
         BlockItem bi = new BlockItem(block, new FabricItemSettings().group(Main.LAWNAGE));
         Registry.register(Registry.BLOCK, id, block);
