@@ -13,9 +13,10 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.redd.lawnage.modHandlers.blocksAndPrimary.BYGModRegistrar;
+import net.redd.lawnage.modHandlers.blocksAndPrimary.CSModRegistrar;
+import net.redd.lawnage.modHandlers.recipes.CinderscapesRecipes;
 import net.redd.lawnage.modHandlers.registar.BEModRegistrar;
-import net.redd.lawnage.modHandlers.registar.BYGModRegistrar;
-import net.redd.lawnage.modHandlers.registar.CSModRegistrar;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -37,14 +38,14 @@ public class Main implements ModInitializer {
 		/*
 		 * Lawnage Lawn type registration
 		*/
-		registerBlockWithItem("grass_lawn", Material.SOIL, 0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, MaterialColor.GRASS);
-		registerBlockWithItem("biome_grass_lawn", Material.SOIL, 0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, MaterialColor.GRASS);
-		registerBlockWithItem("mushroom_lawn", Material.SOIL, 0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, MaterialColor.BROWN);
-		registerBlockWithItem("warped_nylium_lawn", Material.STONE, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, MaterialColor.field_25705);
-		registerBlockWithItem("crimson_nylium_lawn", Material.STONE, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, MaterialColor.field_25702);
+		registerBlockWithItem("grass_lawn", Material.SOIL, 0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, 1, MaterialColor.GRASS);
+		registerBlockWithItem("biome_grass_lawn", Material.SOIL, 0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, 1, MaterialColor.GRASS);
+		registerBlockWithItem("mushroom_lawn", Material.SOIL, 0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, 1, MaterialColor.BROWN);
+		registerBlockWithItem("warped_nylium_lawn", Material.STONE, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.PICKAXES, 1, MaterialColor.field_25705);
+		registerBlockWithItem("crimson_nylium_lawn", Material.STONE, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.PICKAXES, 1, MaterialColor.field_25702);
 
 		ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> BiomeColors.getGrassColor(view,pos), registeredBlocks.get("biome_grass_lawn"));
-												ColorProviderRegistry.ITEM.register((stack, tintIndex) -> MaterialColor.GRASS.color, registeredBlocks.get("biome_grass_lawn"));
+		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> MaterialColor.GRASS.color, registeredBlocks.get("biome_grass_lawn"));
 
 		/*
 		 * Lawnage Recipe Registration
@@ -62,7 +63,7 @@ public class Main implements ModInitializer {
 		/*
 		 * Mod support Recipe registration
 		*/
-
+		CinderscapesRecipes.INSTANCE.registerRecipes();
 
 
 

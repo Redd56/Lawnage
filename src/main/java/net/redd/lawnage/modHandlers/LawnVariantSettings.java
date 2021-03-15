@@ -13,13 +13,15 @@ public class LawnVariantSettings {
     public float strength;
     public BlockSoundGroup sound;
     public Tag<Item> tool;
+    public int toolLevel;
 
-    public LawnVariantSettings(Material mat, MaterialColor color, float strength, BlockSoundGroup sound, Tag<Item> tool){
+    public LawnVariantSettings(Material mat, MaterialColor color, float strength, BlockSoundGroup sound, Tag<Item> tool, int toolLevel){
         this.mat = mat;
         this.color = color;
         this.strength = strength;
         this.sound = sound;
         this.tool = tool;
+        this.toolLevel = toolLevel;
     }
 
 }

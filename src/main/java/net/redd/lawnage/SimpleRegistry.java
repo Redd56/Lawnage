@@ -20,19 +20,27 @@ public class SimpleRegistry {
     public static HashMap<String, Block> registeredBlocks = new HashMap<>();
     public static HashMap<String, BlockItem> registeredItems = new HashMap<>();
 
-    public static void registerBlockWithItem(String path, Material mat, float strength, BlockSoundGroup sounds, Tag<Item> toolTags, MaterialColor color){
-        Block block = new Block(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds).breakByTool(toolTags));
+    public static void registerBlockWithItem(String path, Material mat, float strength, BlockSoundGroup sounds, Tag<Item> toolTags, int toolLevel, MaterialColor color){
+        Block block = new Block(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds).breakByTool(toolTags, toolLevel));
         Identifier id = new Identifier("lawnage", path);
         BlockItem bi = new BlockItem(block, new FabricItemSettings().group(Main.LAWNAGE));
         Registry.register(Registry.BLOCK, id, block);
         Registry.register(Registry.ITEM, id, bi);
         registeredBlocks.put(id.getPath(), block);
         registeredItems.put(id.getPath(), bi);
-
+        path += "_recipe";
     }
 
     public static void registerRecipe(Identifier id, JRecipe recipe){
         Main.LAWNAGE_PACK.addRecipe(id, recipe);
+    }
+
+    public static void registerShapelessRecipe(Identifier id, Item result, Item... ingedients){
+        JIngredients list  = JIngredients.ingredients();
+        for(Item i : ingedients){
+            list.add(JIngredient.ingredient().item(i));
+        }
+        Main.LAWNAGE_PACK.addRecipe(id, JRecipe.shapeless(list, JResult.item(result)));
     }
 
     public static Block get(String path) { return registeredBlocks.get(path); }

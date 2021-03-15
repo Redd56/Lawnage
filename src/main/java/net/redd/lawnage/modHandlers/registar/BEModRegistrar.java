@@ -24,17 +24,17 @@ public class BEModRegistrar extends ModRegistrar {
     public static HashMap<String, LawnVariantSettings> variants = new HashMap<>();
 
     static {
-        variants.put("sangnum_lawn", new LawnVariantSettings(Material.STONE, Material.SOLID_ORGANIC.getColor(), 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES));
-        variants.put("end_mycelium", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES));
-        variants.put("end_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES));
-        variants.put("chorus_nylium", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES));
-        variants.put("cave_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES));
-        variants.put("crystal_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES));
-        variants.put("shadow_grass", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES));
-        variants.put("pink_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES));
-        variants.put("amber_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES));
-        variants.put("jungle_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES));
-        variants.put("rutiscis", new LawnVariantSettings(Material.STONE, MaterialColor.SAND, 3.0F, BlockSoundGroup.STONE, FabricToolTags.PICKAXES));
+        variants.put("sangnum_lawn", new LawnVariantSettings(Material.STONE, Material.SOLID_ORGANIC.getColor(), 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1));
+        variants.put("end_mycelium", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1));
+        variants.put("end_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1));
+        variants.put("chorus_nylium", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1));
+        variants.put("cave_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1));
+        variants.put("crystal_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1));
+        variants.put("shadow_grass", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1));
+        variants.put("pink_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1));
+        variants.put("amber_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1));
+        variants.put("jungle_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1));
+        variants.put("rutiscis", new LawnVariantSettings(Material.STONE, MaterialColor.SAND, 3.0F, BlockSoundGroup.STONE, FabricToolTags.PICKAXES, 1));
     }
 
     @Override
@@ -47,7 +47,7 @@ public class BEModRegistrar extends ModRegistrar {
         for(String variant : variants.keySet()){
             LOGGER.log(Level.INFO, "Registering variant better end:" + variant);
             LawnVariantSettings lvs = variants.get(variant);
-            SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.color);
+            SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.toolLevel, lvs.color);
         }
     }
 
