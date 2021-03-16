@@ -1,4 +1,4 @@
-package net.redd.lawnage;
+package net.redd.lawnage.core.systems;
 
 import net.devtech.arrp.json.recipe.JIngredient;
 import net.devtech.arrp.json.recipe.JIngredients;
@@ -7,13 +7,13 @@ import net.devtech.arrp.json.recipe.JResult;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
-import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.tag.Tag;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.redd.lawnage.Main;
 
 import java.util.HashMap;
 

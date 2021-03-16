@@ -1,4 +1,4 @@
-package net.redd.lawnage.modHandlers;
+package net.redd.lawnage.core.systems;
 
 public abstract class ModRegistrar {
 

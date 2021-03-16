@@ -1,4 +1,4 @@
-package net.redd.lawnage;
+package net.redd.lawnage.core.systems;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;

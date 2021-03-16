@@ -1,13 +1,14 @@
-package net.redd.lawnage.modHandlers.blockAndItems;
+package net.redd.lawnage.modContent.blockAndItems;
 
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Material;
 import net.minecraft.block.MaterialColor;
 import net.minecraft.sound.BlockSoundGroup;
-import net.redd.lawnage.SimpleRegistry;
-import net.redd.lawnage.register.LawnVariantSettings;
-import net.redd.lawnage.modHandlers.ModRegistrar;
+import net.redd.lawnage.core.systems.SimpleRegistry;
+import net.redd.lawnage.modContent.recipes.CinderscapesRecipes;
+import net.redd.lawnage.core.systems.LawnVariantSettings;
+import net.redd.lawnage.core.systems.ModRegistrar;
 import org.apache.logging.log4j.Level;
 
 import java.util.HashMap;
@@ -41,6 +42,7 @@ public class CSModRegistrar extends ModRegistrar {
             LawnVariantSettings lvs = variants.get(variant);
             SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.toolLevel, lvs.color, lvs.requiresTool);
         }
+        CinderscapesRecipes.INSTANCE.registerRecipes();
     }
 
 

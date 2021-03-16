@@ -1,13 +1,14 @@
-package net.redd.lawnage.modHandlers.recipes;
+package net.redd.lawnage.modContent.recipes;
 
 import net.devtech.arrp.json.recipe.*;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
-import net.redd.lawnage.SimpleRegistry;
+import net.redd.lawnage.core.systems.RecipeLoader;
+import net.redd.lawnage.core.systems.SimpleRegistry;
 import org.apache.logging.log4j.Level;
 
 import static net.redd.lawnage.Main.LOGGER;
-import static net.redd.lawnage.SimpleRegistry.get;
+import static net.redd.lawnage.core.systems.SimpleRegistry.get;
 
 public class CinderscapesRecipes extends RecipeLoader {
 
@@ -15,13 +16,13 @@ public class CinderscapesRecipes extends RecipeLoader {
 
     private CinderscapesRecipes(){}
 
-    static { mod_id="cinderscapes"; }
+    static { mod_id="lawnage"; }
 
     @Override
     public void registerRecipes() {
         LOGGER.log(Level.INFO,"LAWNAGE: loading recipes for cinderscapes addon!");
         {
-            SimpleRegistry.registerRecipe(new Identifier("lawnage", "umbral_shaped_0"), JRecipe.shaped(
+            SimpleRegistry.registerRecipe(new Identifier(mod_id, "umbral_shaped_0"), JRecipe.shaped(
                     JPattern.pattern(
                             "nnn",
                             "nun",
@@ -41,7 +42,7 @@ public class CinderscapesRecipes extends RecipeLoader {
 
         }
         {
-            SimpleRegistry.registerRecipe(new Identifier("lawnage", "umbral_shapeless_0"), JRecipe.shapeless
+            SimpleRegistry.registerRecipe(new Identifier(mod_id, "umbral_shapeless_0"), JRecipe.shapeless
                             (JIngredients.ingredients()
                                     .add(
                                             JIngredient.ingredient()
@@ -51,7 +52,7 @@ public class CinderscapesRecipes extends RecipeLoader {
             ));
         }
         {
-            SimpleRegistry.registerRecipe(new Identifier("lawnage", "umbral_shapeless_1"), JRecipe.shapeless(
+            SimpleRegistry.registerRecipe(new Identifier(mod_id, "umbral_shapeless_1"), JRecipe.shapeless(
                     JIngredients.ingredients()
                             .add(
                                     JIngredient.ingredient()

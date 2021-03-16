@@ -1,25 +1,25 @@
-package net.redd.lawnage.modHandlers.blockAndItems;
+package net.redd.lawnage.modContent.blockAndItems;
 
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Material;
 import net.minecraft.block.MaterialColor;
 import net.minecraft.sound.BlockSoundGroup;
-import net.redd.lawnage.SimpleRegistry;
-import net.redd.lawnage.register.LawnVariantSettings;
-import net.redd.lawnage.modHandlers.ModRegistrar;
+import net.redd.lawnage.core.systems.SimpleRegistry;
+import net.redd.lawnage.core.systems.LawnVariantSettings;
+import net.redd.lawnage.core.systems.ModRegistrar;
 import org.apache.logging.log4j.Level;
 
 import java.util.HashMap;
 
 import static net.redd.lawnage.Main.LOGGER;
 
-public class BEModRegistrar extends ModRegistrar {
+public class BnModRegistrar extends ModRegistrar {
     static { mod_id = "betterend"; }
 
-    public static BEModRegistrar INSTANCE = new BEModRegistrar();
+    public static BnModRegistrar INSTANCE = new BnModRegistrar();
 
-    private BEModRegistrar(){}
+    private BnModRegistrar(){}
 
     public static HashMap<String, LawnVariantSettings> variants = new HashMap<>();
 
