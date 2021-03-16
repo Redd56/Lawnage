@@ -26,7 +26,7 @@ public class BlocksAndItems extends ModRegistrar {
     static {
         variants.put("grass_lawn",new LawnVariantSettings( Material.SOIL, MaterialColor.GRASS,0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, 1, false));
         variants.put("biome_grass_lawn",new LawnVariantSettings( Material.SOIL, MaterialColor.GRASS, 0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, 1,false));
-        variants.put("mushroom_lawn",new LawnVariantSettings( Material.SOIL, MaterialColor.BROWN,0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, 1, false));
+        variants.put("mushroom_lawn",new LawnVariantSettings( Material.SOIL, MaterialColor.PURPLE,0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, 1, false));
         variants.put("warped_nylium_lawn", new LawnVariantSettings( Material.STONE, MaterialColor.field_25705,0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1, true));
         variants.put("crimson_nylium_lawn",new LawnVariantSettings( Material.STONE, MaterialColor.field_25702,  0.4f,  BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
     }
