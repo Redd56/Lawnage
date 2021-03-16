@@ -1,5 +1,19 @@
 {
   "variants": {
-    "": { "model": "lawnage:block/grass_lawn" }
+    "facing=east": {
+      "model": "lawnage:block/grass_lawn",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "lawnage:block/grass_lawn",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "lawnage:block/grass_lawn"
+    },
+    "facing=west": {
+      "model": "lawnage:block/grass_lawn",
+      "y": 90
+    }
   }
 }

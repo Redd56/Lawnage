@@ -1,5 +1,19 @@
 {
   "variants": {
-    "": { "model": "lawnage:block/nightshade_phylium_lawn"}
+    "facing=east": {
+      "model": "lawnage:block/nightshade_phylium_lawn",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "lawnage:block/nightshade_phylium_lawn",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "lawnage:block/nightshade_phylium_lawn"
+    },
+    "facing=west": {
+      "model": "lawnage:block/nightshade_phylium_lawn",
+      "y": 90
+    }
   }
 }

@@ -1,5 +1,19 @@
 {
   "variants": {
-    "": { "model": "lawnage:block/umbral_nylium_lawn" }
+    "facing=east": {
+      "model": "lawnage:block/umbral_nylium_lawn",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "lawnage:block/umbral_nylium_lawn",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "lawnage:block/umbral_nylium_lawn"
+    },
+    "facing=west": {
+      "model": "lawnage:block/umbral_nylium_lawn",
+      "y": 90
+    }
   }
 }

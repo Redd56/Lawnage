@@ -1,5 +1,19 @@
 {
   "variants": {
-    "": { "model": "lawnage:block/mushroom_lawn" }
+    "facing=east": {
+      "model": "lawnage:block/mushroom_lawn",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "lawnage:block/mushroom_lawn",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "lawnage:block/mushroom_lawn"
+    },
+    "facing=west": {
+      "model": "lawnage:block/mushroom_lawn",
+      "y": 90
+    }
   }
 }
