@@ -20,7 +20,6 @@ public class CinderscapesRecipes extends RecipeLoader {
     @Override
     public void registerRecipes() {
         LOGGER.log(Level.INFO,"LAWNAGE: loading recipes for cinderscapes addon!");
-
         {
             SimpleRegistry.registerRecipe(new Identifier("lawnage", "umbral_shaped_0"), JRecipe.shaped(
                     JPattern.pattern(
@@ -41,7 +40,6 @@ public class CinderscapesRecipes extends RecipeLoader {
             ));
 
         }
-
         {
             SimpleRegistry.registerRecipe(new Identifier("lawnage", "umbral_shapeless_0"), JRecipe.shapeless
                             (JIngredients.ingredients()
@@ -52,7 +50,6 @@ public class CinderscapesRecipes extends RecipeLoader {
                             JResult.item(get("umbral_nylium_lawn").asItem())
             ));
         }
-
         {
             SimpleRegistry.registerRecipe(new Identifier("lawnage", "umbral_shapeless_1"), JRecipe.shapeless(
                     JIngredients.ingredients()
@@ -66,6 +63,8 @@ public class CinderscapesRecipes extends RecipeLoader {
                             ),
                     JResult.item(get("umbral_nylium_lawn").asItem())));
         }
+
+
 
         LOGGER.log(Level.INFO,"LAWNAGE: successfully loaded recipes for cinderscapes addon!");
     }

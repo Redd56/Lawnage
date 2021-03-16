@@ -56,9 +56,9 @@ public class Main implements ModInitializer {
 		 * Mod support Lawn type registration
 		*/
 
-		BYGModRegistrar.INSTANCE.registerVariants();
+//		BYGModRegistrar.INSTANCE.registerVariants();
 		CSModRegistrar.INSTANCE.registerVariants();
-		BEModRegistrar.INSTANCE.registerVariants();
+//		BEModRegistrar.INSTANCE.registerVariants();
 
 		/*
 		 * Mod support Recipe registration

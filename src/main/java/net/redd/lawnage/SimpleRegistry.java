@@ -27,7 +27,7 @@ public class SimpleRegistry {
         Block block = (requiresTool)
                 ? new Block(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds).breakByTool(toolTags, toolLevel).requiresTool())
                 : new Block(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds).breakByTool(toolTags, toolLevel));
-        Identifier id = new Identifier("lawnage", path);
+        Identifier id = new Identifier("lawnage", path);    
         BlockItem bi = new BlockItem(block, new FabricItemSettings().group(Main.LAWNAGE));
         Registry.register(Registry.BLOCK, id, block);
         Registry.register(Registry.ITEM, id, bi);
