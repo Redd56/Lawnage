@@ -13,10 +13,9 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import net.redd.lawnage.modHandlers.registar.BEModRegistrar;
+import net.redd.lawnage.modHandlers.blockAndItems.BYGModRegistrar;
 import net.redd.lawnage.modHandlers.recipes.CinderscapesRecipes;
-import net.redd.lawnage.modHandlers.registar.BYGModRegistrar;
-import net.redd.lawnage.modHandlers.registar.CSModRegistrar;
+import net.redd.lawnage.modHandlers.blockAndItems.CSModRegistrar;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -56,14 +55,14 @@ public class Main implements ModInitializer {
 		 * Mod support Lawn type registration
 		*/
 
-//		BYGModRegistrar.INSTANCE.registerVariants();
-		CSModRegistrar.INSTANCE.registerVariants();
+		BYGModRegistrar.INSTANCE.registerVariants();
+//		CSModRegistrar.INSTANCE.registerVariants();
 //		BEModRegistrar.INSTANCE.registerVariants();
 
 		/*
 		 * Mod support Recipe registration
 		*/
-		CinderscapesRecipes.INSTANCE.registerRecipes();
+//		CinderscapesRecipes.INSTANCE.registerRecipes();
 
 
 

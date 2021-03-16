@@ -1,4 +1,4 @@
-package net.redd.lawnage.modHandlers;
+package net.redd.lawnage.register;
 
 import net.minecraft.block.Material;
 import net.minecraft.block.MaterialColor;

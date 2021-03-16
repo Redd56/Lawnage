@@ -6,9 +6,8 @@ import net.devtech.arrp.json.recipe.JRecipe;
 import net.devtech.arrp.json.recipe.JResult;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Material;
-import net.minecraft.block.MaterialColor;
+import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
@@ -25,8 +24,8 @@ public class SimpleRegistry {
 
     public static void registerBlockWithItem(String path, Material mat, float strength, BlockSoundGroup sounds, Tag<Item> toolTags, int toolLevel, MaterialColor color, boolean requiresTool){
         Block block = (requiresTool)
-                ? new Block(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds).breakByTool(toolTags, toolLevel).requiresTool())
-                : new Block(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds).breakByTool(toolTags, toolLevel));
+                ? new LawnBlock(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds).breakByTool(toolTags, toolLevel).requiresTool())
+                : new LawnBlock(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds).breakByTool(toolTags, toolLevel));
         Identifier id = new Identifier("lawnage", path);    
         BlockItem bi = new BlockItem(block, new FabricItemSettings().group(Main.LAWNAGE));
         Registry.register(Registry.BLOCK, id, block);
@@ -34,8 +33,8 @@ public class SimpleRegistry {
         registeredBlocks.put(id.getPath(), block);
         registeredItems.put(id.getPath(), bi);
         path += "_recipe";
-    }
 
+    }
     public static void registerRecipe(Identifier id, JRecipe recipe){
         Main.LAWNAGE_PACK.addRecipe(id, recipe);
     }
