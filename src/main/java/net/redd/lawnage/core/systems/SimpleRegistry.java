@@ -43,7 +43,7 @@ public class SimpleRegistry {
     }
 
     public static void registerLootTable(String path, String lootIdentifier, String lootType){
-        Main.LAWNAGE_PACK.addLootTable(Identifier.tryParse(id("lawnage:" + path)),
+        Main.LAWNAGE_PACK.addLootTable(Identifier.tryParse(id("lawnage:blocks/" + path)),
                 loot("minecraft:block").pool(pool().rolls(1).entry(entry()
                         .type(lootType).name(lootIdentifier))));
     }

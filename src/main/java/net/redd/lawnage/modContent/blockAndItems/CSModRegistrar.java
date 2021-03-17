@@ -43,6 +43,8 @@ public class CSModRegistrar extends ModRegistrar {
             SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.toolLevel, lvs.color, lvs.requiresTool);
             if(lvs.hasCustomDrop()){
                 SimpleRegistry.registerLootTable(variant, lvs.lootIdentifier, lvs.lootType);
+            } else {
+                SimpleRegistry.registerLootTable(variant, variant, "minecraft:item");
             }
         }
         CinderscapesRecipes.INSTANCE.registerRecipes();
