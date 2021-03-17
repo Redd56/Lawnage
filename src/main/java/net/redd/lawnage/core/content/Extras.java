@@ -12,7 +12,7 @@ public class Extras{
     public static Extras INSTANCE = new Extras();
 
 public void initBiomeColors(){
-        LOGGER.log(Level.INFO, "LAWNAGE: Registering base Extras");
+        LOGGER.log(Level.INFO, "LAWNAGE: Registering Base Extras!");
         ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> BiomeColors.getGrassColor(view,pos), SimpleRegistry.get("biome_grass_lawn"));
 		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> MaterialColor.GRASS.color, SimpleRegistry.get("biome_grass_lawn"));
 }

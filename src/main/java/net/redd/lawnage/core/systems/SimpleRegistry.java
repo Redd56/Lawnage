@@ -1,9 +1,6 @@
 package net.redd.lawnage.core.systems;
 
-import net.devtech.arrp.json.recipe.JIngredient;
-import net.devtech.arrp.json.recipe.JIngredients;
 import net.devtech.arrp.json.recipe.JRecipe;
-import net.devtech.arrp.json.recipe.JResult;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -14,14 +11,12 @@ import net.minecraft.tag.Tag;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.redd.lawnage.Main;
-import org.apache.logging.log4j.Level;
 
 import java.util.HashMap;
 
 
 import static net.devtech.arrp.api.RuntimeResourcePack.id;
 import static net.devtech.arrp.json.loot.JLootTable.*;
-import static net.redd.lawnage.Main.LOGGER;
 
 public class SimpleRegistry {
 
