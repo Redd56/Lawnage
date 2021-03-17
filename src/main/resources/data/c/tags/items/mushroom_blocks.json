@@ -1,0 +1,97 @@
+{
+  "replace": false,
+  "values":
+  [
+    "minecraft:brown_mushroom_block",
+    "minecraft:red_mushroom_block",
+    "minecraft:mushroom_stem",
+    {
+      "id": "byg:brown_mushroom_stem",
+      "required": false
+    },
+    {
+      "id": "byg:death_cap_mushroom_block",
+      "required": false
+    },
+    {
+      "id": "byg:green_mushroom_block",
+      "required": false
+    },
+    {
+    "id": "byg:weeping_milkcap_mushroom_block",
+    "required": false
+    },
+    {
+      "id": "byg:wood_blewit_mushroom_block",
+      "required": false
+    },
+    {
+      "id": "byg:black_puff_mushroom_block",
+      "required": false
+    },
+    {
+      "id": "byg:white_mushroom_stem",
+      "required": false
+    },
+    {
+      "id": "wildexplorer:light_gray_mushroom_block",
+      "required": false
+    },
+    {
+      "id": "wildexplorer:gray_mushroom_block",
+      "required": false
+    },
+    {
+      "id": "wildexplorer:white_mushroom_block",
+      "required": false
+    },
+    {
+      "id": "wildexplorer:black_mushroom_block",
+      "required": false
+    },
+    {
+      "id": "wildexplorer:orange_mushroom_block",
+      "required": false
+    },
+    {
+      "id": "wildexplorer:lime_mushroom_block",
+      "required": false
+    },
+    {
+      "id": "wildexplorer:yellow_mushroom_block",
+      "required": false
+    },
+    {
+      "id": "wildexplorer:cyan_mushroom_block",
+      "required": false
+    },
+    {
+      "id": "wildexplorer:green_mushroom_block",
+      "required": false
+    },
+    {
+      "id": "wildexplorer:light_blue_mushroom_block",
+      "required": false
+    },
+    {
+      "id": "wildexplorer:blue_mushroom_block",
+      "required": false
+    },
+    {
+      "id": "wildexplorer:purple_mushroom_block",
+      "required": false
+    },
+    {
+      "id": "wildexplorer:magenta_mushroom_block",
+      "required": false
+    },
+    {
+      "id": "wildexplorer:pink_mushroom_block",
+      "required": false
+    },
+    {
+      "id": "mubble:scarlet_mushroom_block",
+      "required": false
+    }
+  ]
+}

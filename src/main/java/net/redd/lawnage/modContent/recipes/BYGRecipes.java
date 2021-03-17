@@ -21,8 +21,6 @@ public class BYGRecipes extends RecipeLoader {
     @Override
     public void registerRecipes() {
         LOGGER.log(Level.INFO,"LAWNAGE: loading recipes for byg addon!");
-        //default extensions
-
         //glowcelium
         {
             SimpleRegistry.registerRecipe(new Identifier(mod_id, "glowcelium_shaped_0"), JRecipe.shaped(

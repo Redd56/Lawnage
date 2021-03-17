@@ -40,6 +40,7 @@ public class BlocksAndItems extends ModRegistrar {
             SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.toolLevel, lvs.color, lvs.requiresTool);
         }
         extras.initBiomeColors();
+        Recipes.INSTANCE.registerRecipes();
 
     }
 

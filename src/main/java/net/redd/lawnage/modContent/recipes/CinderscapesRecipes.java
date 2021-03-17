@@ -31,7 +31,8 @@ public class CinderscapesRecipes extends RecipeLoader {
                     JKeys.keys()
                             .key("u",
                                     JIngredient.ingredient()
-                                            .tag("lawnage:umbral_block")
+                                    .item("cinderscapes:umbral_flesh_block")
+                                    .item("cinderscapes:umbral_wart_block")
                             )
                             .key("n",
                                     JIngredient.ingredient()
