@@ -15,6 +15,7 @@ public class LawnVariantSettings {
     public Tag<Item> tool;
     public int toolLevel;
     public boolean requiresTool;
+    public String lootIdentifier, lootType;
 
     public LawnVariantSettings(Material mat, MaterialColor color, float strength, BlockSoundGroup sound, Tag<Item> tool, int toolLevel,boolean requiresTool){
         this.mat = mat;
@@ -24,6 +25,15 @@ public class LawnVariantSettings {
         this.tool = tool;
         this.toolLevel = toolLevel;
         this.requiresTool = requiresTool;
+        this.lootIdentifier = "";
+        this.lootType = "";
+    }
+
+
+    public LawnVariantSettings setCustomDrop(String lootIdentifier, String lootType){
+        this.lootType = lootType;
+        this.lootIdentifier = lootIdentifier;
+        return this;
     }
 
 }

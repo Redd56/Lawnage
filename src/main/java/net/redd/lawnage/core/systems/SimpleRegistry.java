@@ -17,6 +17,9 @@ import net.redd.lawnage.Main;
 
 import java.util.HashMap;
 
+import static jdk.nashorn.internal.runtime.Debug.id;
+import static net.devtech.arrp.json.loot.JLootTable.*;
+
 public class SimpleRegistry {
 
     public static HashMap<String, Block> registeredBlocks = new HashMap<>();
@@ -37,6 +40,12 @@ public class SimpleRegistry {
     }
     public static void registerRecipe(Identifier id, JRecipe recipe){
         Main.LAWNAGE_PACK.addRecipe(id, recipe);
+    }
+
+    public static void registerLootTable(String path, String lootIdentifier, String lootType){
+        Main.LAWNAGE_PACK.addLootTable(Identifier.tryParse(id("lawnage:" + path)),
+                loot("minecraft:block").pool(pool().rolls(1).entry(entry()
+                        .type(lootType).name(lootIdentifier))));
     }
 
     public static void registerShapelessRecipe(Identifier id, Item result, Item... ingedients){
