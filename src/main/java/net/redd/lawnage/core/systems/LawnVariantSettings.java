@@ -29,6 +29,9 @@ public class LawnVariantSettings {
         this.lootType = "";
     }
 
+    public boolean hasCustomDrop(){
+        return lootIdentifier != "" && lootType != "";
+    }
 
     public LawnVariantSettings setCustomDrop(String lootIdentifier, String lootType){
         this.lootType = lootType;

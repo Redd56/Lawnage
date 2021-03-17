@@ -38,6 +38,9 @@ public class BlocksAndItems extends ModRegistrar {
 //            LOGGER.log(Level.INFO, "Registering block lawnage:" + variant);
             LawnVariantSettings lvs = variants.get(variant);
             SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.toolLevel, lvs.color, lvs.requiresTool);
+            if(lvs.hasCustomDrop()){
+                SimpleRegistry.registerLootTable(variant, lvs.lootIdentifier, lvs.lootType);
+            }
         }
         Recipes.INSTANCE.registerRecipes();
         Extras.INSTANCE.initBiomeColors();
