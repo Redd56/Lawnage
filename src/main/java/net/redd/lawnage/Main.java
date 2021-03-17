@@ -8,8 +8,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.redd.lawnage.core.content.BlocksAndItems;
-import net.redd.lawnage.modContent.blockAndItems.BYGModRegistrar;
-import net.redd.lawnage.modContent.blockAndItems.CSModRegistrar;
+import net.redd.lawnage.modContent.blockAndItems.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -35,6 +34,8 @@ public class Main implements ModInitializer {
 //		BYGModRegistrar.INSTANCE.registerVariants();
 //		CSModRegistrar.INSTANCE.registerVariants();
 //		BEModRegistrar.INSTANCE.registerVariants();
+//		BnModRegistrar.INSTANCE.registerVariants();
+//		WildExplorerRegistrar.INSTANCE.registerVariants();
 
 		RRPCallback.EVENT.register(a -> a.add(LAWNAGE_PACK));
 	}

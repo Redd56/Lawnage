@@ -51,7 +51,7 @@ public class BEModRegistrar extends ModRegistrar {
             if(lvs.hasCustomDrop()){
                 SimpleRegistry.registerLootTable(variant, lvs.lootIdentifier, lvs.lootType);
             } else {
-                SimpleRegistry.registerLootTable(variant, variant, "minecraft:item");
+                SimpleRegistry.registerLootTable(variant,"lawnage:"+ variant, "minecraft:item");
             }
         }
     }
