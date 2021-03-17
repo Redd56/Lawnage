@@ -19,7 +19,7 @@ public class Recipes extends RecipeLoader {
 
     @Override
     public void registerRecipes() {
-        LOGGER.log(Level.INFO,"LAWNAGE: loading base recipes!");
+        LOGGER.log(Level.INFO,"LAWNAGE: Registering base recipes!");
 
         //biome lawn
         {

@@ -33,14 +33,15 @@ public class BlocksAndItems extends ModRegistrar {
 
     @Override
     public void registerVariants() {
-        LOGGER.log(Level.INFO, "Registering base blocks and items");
+        LOGGER.log(Level.INFO, "LAWNAGE: Registering base blocks and items");
         for(String variant : variants.keySet()){
-            LOGGER.log(Level.INFO, "Registering block lawnage:" + variant);
+//            LOGGER.log(Level.INFO, "Registering block lawnage:" + variant);
             LawnVariantSettings lvs = variants.get(variant);
             SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.toolLevel, lvs.color, lvs.requiresTool);
         }
-        extras.initBiomeColors();
         Recipes.INSTANCE.registerRecipes();
+        Extras.INSTANCE.initBiomeColors();
+
 
     }
 
