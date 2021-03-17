@@ -27,7 +27,7 @@ public class Recipes extends RecipeLoader {
                     (JIngredients.ingredients()
                                     .add(
                                             JIngredient.ingredient()
-                                                    .item("grass_lawn")
+                                                    .item("lawnage:grass_lawn")
                                     ),
                             JResult.item(get("biome_grass_lawn").asItem())
                     ));
@@ -53,7 +53,7 @@ public class Recipes extends RecipeLoader {
                     (JIngredients.ingredients()
                                     .add(
                                             JIngredient.ingredient()
-                                                    .item("biome_grass_lawn")
+                                                    .item("lawnage:biome_grass_lawn")
                                     ),
                             JResult.item(get("grass_lawn").asItem())
                     ));
@@ -69,7 +69,7 @@ public class Recipes extends RecipeLoader {
                             JResult.item(get("grass_lawn").asItem())
                     ));
         }
-        //Mushroom lawn
+        //mushroom lawn
         {
             SimpleRegistry.registerRecipe(new Identifier(mod_id, "mushroom_shapeless_0"), JRecipe.shapeless
                     (JIngredients.ingredients()
@@ -91,7 +91,7 @@ public class Recipes extends RecipeLoader {
                                             JIngredient.ingredient()
                                                     .tag("c:mycelium")
                                     ),
-                            JResult.item(get("grass_lawn").asItem())
+                            JResult.item(get("mushroom_lawn").asItem())
                     ));
         }
         {
@@ -114,37 +114,98 @@ public class Recipes extends RecipeLoader {
             ));
 
         }
-        //temp
-//        {
-//            SimpleRegistry.registerRecipe(new Identifier(mod_id, ""), JRecipe.shaped(
-//                    JPattern.pattern(
-//                            "nnn",
-//                            "nun",
-//                            "nnn"
-//                    ),
-//                    JKeys.keys()
-//                            .key("u",
-//                                    JIngredient.ingredient()
-//                                            .tag("")
-//                            )
-//                            .key("n",
-//                                    JIngredient.ingredient()
-//                                            .item(Items.NETHERRACK)
-//                            ),
-//                    JResult.itemStack(get("").asItem(), 8)
-//            ));
-//
-//        }
-//        {
-//            SimpleRegistry.registerRecipe(new Identifier(mod_id, "umbral_shapeless_0"), JRecipe.shapeless
-//                    (JIngredients.ingredients()
-//                                    .add(
-//                                            JIngredient.ingredient()
-//                                                    .item("cinderscapes:umbral_nylium")
-//                                    ),
-//                            JResult.item(get("umbral_nylium_lawn").asItem())
-//                    ));
-//        }
+        //warped
+        {
+            SimpleRegistry.registerRecipe(new Identifier(mod_id, "warped_shapeless_0"), JRecipe.shapeless
+                    (JIngredients.ingredients()
+                                    .add(
+                                            JIngredient.ingredient()
+                                                    .item(Items.WARPED_NYLIUM)
+                                    ),
+                            JResult.item(get("warped_nylium_lawn").asItem())
+                    ));
+        }
+        {
+            SimpleRegistry.registerRecipe(new Identifier(mod_id, "warped_shapeless_1"), JRecipe.shapeless
+                    (JIngredients.ingredients()
+                                    .add(
+                                            JIngredient.ingredient()
+                                                    .tag("lawnage:warped")
+                                    )
+                            .add(
+                                    JIngredient.ingredient()
+                                            .item(Items.NETHERRACK)
+                            ),
+                            JResult.item(get("warped_nylium_lawn").asItem())
+                    ));
+        }
+        {
+            SimpleRegistry.registerRecipe(new Identifier(mod_id, "warped_shaped_0"), JRecipe.shaped(
+                    JPattern.pattern(
+                            "nnn",
+                            "nwn",
+                            "nnn"
+                    ),
+                    JKeys.keys()
+                            .key("w",
+                                    JIngredient.ingredient()
+                                            .item(Items.WARPED_WART_BLOCK)
+                            )
+                            .key("n",
+                                    JIngredient.ingredient()
+                                            .item(Items.NETHERRACK)
+                            ),
+                    JResult.itemStack(get("warped_nylium_lawn").asItem(), 8)
+            ));
+
+        }
+        //crimson
+        {
+            SimpleRegistry.registerRecipe(new Identifier(mod_id, "crimson_shapeless_0"), JRecipe.shapeless
+                    (JIngredients.ingredients()
+                                    .add(
+                                            JIngredient.ingredient()
+                                                    .item(Items.CRIMSON_NYLIUM)
+                                    ),
+                            JResult.item(get("crimson_nylium_lawn").asItem())
+                    ));
+        }
+        {
+            SimpleRegistry.registerRecipe(new Identifier(mod_id, "crimson_shapeless_1"), JRecipe.shapeless
+                    (JIngredients.ingredients()
+                            .add(
+                                    JIngredient.ingredient()
+                                    .tag("lawnage:crimson")
+                            )
+                                    .add(
+                                            JIngredient.ingredient()
+                                                    .item(Items.NETHERRACK)
+                                    ),
+                            JResult.item(get("crimson_nylium_lawn").asItem())
+
+                    ));
+        }
+        {
+            SimpleRegistry.registerRecipe(new Identifier(mod_id, "crimson_shaped_0"), JRecipe.shaped(
+                    JPattern.pattern(
+                            "nnn",
+                            "ncn",
+                            "nnn"
+                    ),
+                    JKeys.keys()
+                            .key("c",
+                                    JIngredient.ingredient()
+                                            .item(Items.NETHER_WART_BLOCK)
+                            )
+                            .key("n",
+                                    JIngredient.ingredient()
+                                            .item(Items.NETHERRACK)
+                            ),
+                    JResult.itemStack(get("crimson_nylium_lawn").asItem(), 8)
+            ));
+
+        }
+
     }
 
 }

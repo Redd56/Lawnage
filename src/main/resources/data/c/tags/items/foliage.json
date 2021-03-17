@@ -6,6 +6,47 @@
     "minecraft:grass",
     "#minecraft:leaves",
     "#minecraft:flowers",
-    "#minecraft:saplings"
+    "#minecraft:saplings",
+    "minecraft:seagrass",
+    {
+      "id": "byg:beach_grass",
+      "required": false
+    },
+    {
+      "id": "byg:prairie_grass",
+      "required": false
+    },
+    {
+      "id": "byg:short_grass",
+      "required": false
+    },
+    {
+      "id": "byg:weed_grass",
+      "required": false
+    },
+    {
+      "id": "byg:short_beach_grass",
+      "required": false
+    },
+    {
+      "id": "byg:cattail",
+      "required": false
+    },
+    {
+      "id": "byg:horseweed",
+      "required": false
+    },
+    {
+      "id": "byg:mini_cactus",
+      "required": false
+    },
+    {
+      "id": "byg:reeds",
+      "required": false
+    },
+    {
+      "id": "byg:poison_ivy",
+      "required": false
+    }
   ]
 }

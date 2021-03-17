@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values":
+  [
+    "minecraft:mycelium",
+    {
+      "id": "byg:mycelium_netherrack",
+      "required": false
+    },
+    {
+      "id": "betternether:nether_mycelium",
+      "required": false
+    }
+  ]
+}

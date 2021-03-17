@@ -29,19 +29,12 @@ public class Main implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		/*
-		 * Lawnage base registration
+		 * Register blocks
 		*/
 		BlocksAndItems.INSTANCE.registerVariants();
-
-		/*
-		 * Mod support registration
-		*/
-		BYGModRegistrar.INSTANCE.registerVariants();
-		CSModRegistrar.INSTANCE.registerVariants();
+//		BYGModRegistrar.INSTANCE.registerVariants();
+//		CSModRegistrar.INSTANCE.registerVariants();
 //		BEModRegistrar.INSTANCE.registerVariants();
-
-
-
 
 		RRPCallback.EVENT.register(a -> a.add(LAWNAGE_PACK));
 	}
