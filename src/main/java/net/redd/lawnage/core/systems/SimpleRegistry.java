@@ -14,11 +14,14 @@ import net.minecraft.tag.Tag;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.redd.lawnage.Main;
+import org.apache.logging.log4j.Level;
 
 import java.util.HashMap;
 
-import static jdk.nashorn.internal.runtime.Debug.id;
+
+import static net.devtech.arrp.api.RuntimeResourcePack.id;
 import static net.devtech.arrp.json.loot.JLootTable.*;
+import static net.redd.lawnage.Main.LOGGER;
 
 public class SimpleRegistry {
 
@@ -43,9 +46,16 @@ public class SimpleRegistry {
     }
 
     public static void registerLootTable(String path, String lootIdentifier, String lootType){
-        Main.LAWNAGE_PACK.addLootTable(Identifier.tryParse(id("lawnage:blocks/" + path)),
-                loot("minecraft:block").pool(pool().rolls(1).entry(entry()
-                        .type(lootType).name(lootIdentifier))));
+        LOGGER.log(Level.INFO, "path is :"+path+": start path");
+        Main.LAWNAGE_PACK.addLootTable((id("lawnage:blocks/"+path)),
+                loot("minecraft:block")
+                        .pool(pool()
+                                .rolls(1)
+                                .entry(entry()
+                                        .type(lootType)
+                                        .name(lootIdentifier)))
+        );
+        LOGGER.log(Level.INFO, "path is :"+path+": end path");
     }
 
     public static void registerShapelessRecipe(Identifier id, Item result, Item... ingedients){
