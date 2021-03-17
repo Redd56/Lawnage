@@ -46,7 +46,6 @@ public class SimpleRegistry {
     }
 
     public static void registerLootTable(String path, String lootIdentifier, String lootType){
-        LOGGER.log(Level.INFO, "path is :"+path+": start path");
         Main.LAWNAGE_PACK.addLootTable((id("lawnage:blocks/"+path)),
                 loot("minecraft:block")
                         .pool(pool()
@@ -55,15 +54,6 @@ public class SimpleRegistry {
                                         .type(lootType)
                                         .name(lootIdentifier)))
         );
-        LOGGER.log(Level.INFO, "path is :"+path+": end path");
-    }
-
-    public static void registerShapelessRecipe(Identifier id, Item result, Item... ingedients){
-        JIngredients list  = JIngredients.ingredients();
-        for(Item i : ingedients){
-            list.add(JIngredient.ingredient().item(i));
-        }
-        Main.LAWNAGE_PACK.addRecipe(id, JRecipe.shapeless(list, JResult.item(result)));
     }
 
     public static Block get(String path) { return registeredBlocks.get(path); }
