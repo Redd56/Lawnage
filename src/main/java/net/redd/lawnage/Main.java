@@ -34,7 +34,7 @@ public class Main implements ModInitializer {
 		BYGModRegistrar.INSTANCE.registerVariants();
 		CSModRegistrar.INSTANCE.registerVariants();
 		BEModRegistrar.INSTANCE.registerVariants();
-//		BnModRegistrar.INSTANCE.registerVariants();
+		BnModRegistrar.INSTANCE.registerVariants();
 		WildExplorerRegistrar.INSTANCE.registerVariants();
 
 		RRPCallback.EVENT.register(a -> a.add(LAWNAGE_PACK));
