@@ -38,7 +38,7 @@ public class CSModRegistrar extends ModRegistrar {
         }
         LOGGER.log(Level.INFO, "LAWNAGE: Registering variants from mod cinderscapes addon");
         for(String variant : variants.keySet()){
-            LOGGER.log(Level.INFO, "LAWNAGE: Registering variant cinderscapes:" + variant);
+//            LOGGER.log(Level.INFO, "LAWNAGE: Registering variant cinderscapes:" + variant);
             LawnVariantSettings lvs = variants.get(variant);
             SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.toolLevel, lvs.color, lvs.requiresTool);
             if(lvs.hasCustomDrop()){

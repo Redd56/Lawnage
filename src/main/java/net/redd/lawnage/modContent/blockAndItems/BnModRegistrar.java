@@ -40,7 +40,7 @@ public class BnModRegistrar extends ModRegistrar {
         }
         LOGGER.log(Level.INFO, "Registering variants from mod better end");
         for(String variant : variants.keySet()){
-            LOGGER.log(Level.INFO, "Registering variant better end:" + variant);
+//            LOGGER.log(Level.INFO, "Registering variant better end:" + variant);
             LawnVariantSettings lvs = variants.get(variant);
             SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.toolLevel, lvs.color, lvs.requiresTool);
             if(lvs.hasCustomDrop()){
