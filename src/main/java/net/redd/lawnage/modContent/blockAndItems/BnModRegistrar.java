@@ -47,7 +47,7 @@ public class BnModRegistrar extends ModRegistrar {
                 SimpleRegistry.registerLootTable(variant, lvs.lootIdentifier, lvs.lootType);
             } else {
                 SimpleRegistry.registerLootTable(variant,"lawnage:" + variant, "minecraft:item");
-            }
+            }//test
         }
     }
 
