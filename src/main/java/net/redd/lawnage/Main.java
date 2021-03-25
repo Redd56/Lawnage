@@ -28,7 +28,7 @@ public class Main implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		/*
-		 * Register blocks
+		 * Register modular blocks and their items.
 		*/
 		BlocksAndItems.INSTANCE.registerVariants();
 		BYGModRegistrar.INSTANCE.registerVariants();

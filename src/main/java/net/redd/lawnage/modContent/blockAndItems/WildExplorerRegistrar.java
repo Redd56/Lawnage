@@ -23,7 +23,7 @@ public class WildExplorerRegistrar extends ModRegistrar {
     private WildExplorerRegistrar(){}
 
     static  {
-        variants.put("black_dylium",new LawnVariantSettings(Material.STONE, Material.SOLID_ORGANIC.getColor(), 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+        variants.put("black_dylium_lawn",new LawnVariantSettings(Material.STONE, Material.SOLID_ORGANIC.getColor(), 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
     }
 
     @Override
