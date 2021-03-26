@@ -47,7 +47,11 @@ public class BEModRegistrar extends ModRegistrar {
         for(String variant : variants.keySet()){
 //            LOGGER.log(Level.INFO, "Registering variant better end:" + variant);
             LawnVariantSettings lvs = variants.get(variant);
-            SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.toolLevel, lvs.color, lvs.requiresTool);
+            if(lvs.hasCustomModel){
+                SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.toolLevel, lvs.color, lvs.requiresTool, lvs.customModel);
+            } else {
+                SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.toolLevel, lvs.color, lvs.requiresTool);
+            }
             if(lvs.hasCustomDrop()){
                 SimpleRegistry.registerLootTable(variant, lvs.lootIdentifier, lvs.lootType);
             } else {

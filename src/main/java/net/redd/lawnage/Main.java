@@ -31,11 +31,11 @@ public class Main implements ModInitializer {
 		 * Register modular blocks and their items.
 		*/
 		BlocksAndItems.INSTANCE.registerVariants();
-//		BYGModRegistrar.INSTANCE.registerVariants();
-//		CSModRegistrar.INSTANCE.registerVariants();
-//		BEModRegistrar.INSTANCE.registerVariants();
-//		BnModRegistrar.INSTANCE.registerVariants();
-//		WildExplorerRegistrar.INSTANCE.registerVariants();
+		BYGModRegistrar.INSTANCE.registerVariants();
+		CSModRegistrar.INSTANCE.registerVariants();
+		BEModRegistrar.INSTANCE.registerVariants();
+		BnModRegistrar.INSTANCE.registerVariants();
+		WildExplorerRegistrar.INSTANCE.registerVariants();
 
 		RRPCallback.EVENT.register(a -> a.add(LAWNAGE_PACK));
 	}
