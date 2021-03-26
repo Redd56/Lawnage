@@ -1,10 +1,13 @@
 package net.redd.lawnage.core.systems;
 
+import net.devtech.arrp.json.blockstate.JBlockModel;
 import net.minecraft.block.Material;
 import net.minecraft.block.MaterialColor;
 import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.tag.Tag;
+
+import static net.devtech.arrp.json.models.JModel.*;
 
 public class LawnVariantSettings {
 
@@ -15,10 +18,11 @@ public class LawnVariantSettings {
     public Tag<Item> tool;
     public int toolLevel;
     public boolean requiresTool;
-    public boolean customModel;
+    public boolean hasCustomModel = false;
     public String lootIdentifier, lootType;
+    public JBlockModel customModel;
 
-    public LawnVariantSettings(Material mat, MaterialColor color, float strength, BlockSoundGroup sound, Tag<Item> tool, int toolLevel,boolean requiresTool, boolean customModel){
+    public LawnVariantSettings(Material mat, MaterialColor color, float strength, BlockSoundGroup sound, Tag<Item> tool, int toolLevel,boolean requiresTool){
         this.mat = mat;
         this.color = color;
         this.strength = strength;
@@ -26,9 +30,14 @@ public class LawnVariantSettings {
         this.tool = tool;
         this.toolLevel = toolLevel;
         this.requiresTool = requiresTool;
-        this.customModel = customModel;
         this.lootIdentifier = "";
         this.lootType = "";
+    }
+
+    public LawnVariantSettings setCustomModel(JBlockModel customModel){
+        this.customModel = customModel;
+        this.hasCustomModel = true;
+        return this;
     }
 
     public boolean hasCustomDrop(){
