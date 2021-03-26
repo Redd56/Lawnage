@@ -15,9 +15,10 @@ public class LawnVariantSettings {
     public Tag<Item> tool;
     public int toolLevel;
     public boolean requiresTool;
+    public boolean customModel;
     public String lootIdentifier, lootType;
 
-    public LawnVariantSettings(Material mat, MaterialColor color, float strength, BlockSoundGroup sound, Tag<Item> tool, int toolLevel,boolean requiresTool){
+    public LawnVariantSettings(Material mat, MaterialColor color, float strength, BlockSoundGroup sound, Tag<Item> tool, int toolLevel,boolean requiresTool, boolean customModel){
         this.mat = mat;
         this.color = color;
         this.strength = strength;
@@ -25,6 +26,7 @@ public class LawnVariantSettings {
         this.tool = tool;
         this.toolLevel = toolLevel;
         this.requiresTool = requiresTool;
+        this.customModel = customModel;
         this.lootIdentifier = "";
         this.lootType = "";
     }
