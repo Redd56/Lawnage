@@ -1,5 +1,7 @@
 package net.redd.lawnage.core.systems;
 
+import net.devtech.arrp.json.blockstate.JBlockModel;
+import net.devtech.arrp.json.models.JModel;
 import net.devtech.arrp.json.recipe.JRecipe;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -24,16 +26,25 @@ public class SimpleRegistry {
     public static HashMap<String, BlockItem> registeredItems = new HashMap<>();
 
     public static void registerBlockWithItem(String path, Material mat, float strength, BlockSoundGroup sounds, Tag<Item> toolTags, int toolLevel, MaterialColor color, boolean requiresTool){
+        registerBlockWithItem(path, mat,  strength, sounds,toolTags, toolLevel, color, requiresTool,null);
+    }
+    public static void registerBlockWithItem(String path, Material mat, float strength, BlockSoundGroup sounds, Tag<Item> toolTags, int toolLevel, MaterialColor color, boolean requiresTool, JModel customModel){
         Block block = (requiresTool)
                 ? new LawnBlock(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds).breakByTool(toolTags, toolLevel).requiresTool())
                 : new LawnBlock(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds).breakByTool(toolTags, toolLevel));
-        Identifier id = new Identifier("lawnage", path);    
+        Identifier id = new Identifier("lawnage", path);
         BlockItem bi = new BlockItem(block, new FabricItemSettings().group(Main.LAWNAGE));
         Registry.register(Registry.BLOCK, id, block);
         Registry.register(Registry.ITEM, id, bi);
         registeredBlocks.put(id.getPath(), block);
         registeredItems.put(id.getPath(), bi);
-        path += "_recipe";
+
+        if(customModel != null){
+            Main.LAWNAGE_PACK.addModel(customModel,id);
+        }
+//        else {
+//            Main.LAWNAGE_PACK.addModel(,id);
+//        }
 
     }
     public static void registerRecipe(Identifier id, JRecipe recipe){
