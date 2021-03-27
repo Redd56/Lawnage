@@ -2,6 +2,7 @@ package net.redd.lawnage.core.systems;
 
 import net.devtech.arrp.json.blockstate.JState;
 import net.devtech.arrp.json.models.JModel;
+import net.devtech.arrp.json.models.JTextures;
 import net.devtech.arrp.json.recipe.JRecipe;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -11,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.tag.Tag;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.registry.Registry;
 import net.redd.lawnage.Main;
 
@@ -20,8 +22,7 @@ import java.util.HashMap;
 import static net.devtech.arrp.api.RuntimeResourcePack.id;
 import static net.devtech.arrp.json.loot.JLootTable.*;
 import static net.devtech.arrp.json.blockstate.JState.*;
-import static net.devtech.arrp.json.models.JModel.textures;
-import static net.devtech.arrp.json.models.JModel.faces;
+import static net.devtech.arrp.json.models.JModel.*;
 
 public class SimpleRegistry {
 
@@ -46,7 +47,19 @@ public class SimpleRegistry {
             Main.LAWNAGE_PACK.addModel(customModel,id);
         }
         else {
-            Main.LAWNAGE_PACK.addModel(,id);
+            JModel model = model().textures(textures().var("all", "block/" + id.getPath()).particle(id.getNamespace() +":block/" + id.getPath())).parent("block/cube_all");
+            System.out.println("Adding model: " + id);
+//                    .element(element().from(0, 0, 0).to(16, 16, 16)
+//                            .faces(faces()
+//                                    .down(face("all").cullface(Direction.DOWN).uv(0,0,16,16))
+//                                    .up(face("all").cullface(Direction.UP).uv(0,0,16,16))
+//                                    .north(face("all").cullface(Direction.NORTH).uv(0,0,16,16))
+//                                    .south(face("all").cullface(Direction.SOUTH).uv(0,0,16,16))
+//                                    .west(face("all").cullface(Direction.WEST).uv(0,0,16,16))
+//                                    .east(face("all").cullface(Direction.EAST).uv(0,0,16,16))
+//                            )
+//                    );
+            Main.LAWNAGE_PACK.addModel(model ,id);
 
         }
 

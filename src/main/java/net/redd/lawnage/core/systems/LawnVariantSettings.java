@@ -37,9 +37,10 @@ public class LawnVariantSettings {
 
     public LawnVariantSettings setCustomModel(JModel customModel){
         this.customModel = customModel;
-        this.hasCustomModel = true;
         return this;
     }
+
+    public boolean hasCustomModel() { return customModel != null; }
 
     public boolean hasCustomDrop(){
         return lootIdentifier != "" && lootType != "";
