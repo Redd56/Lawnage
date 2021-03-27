@@ -15,6 +15,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.registry.Registry;
 import net.redd.lawnage.Main;
+import org.apache.logging.log4j.Level;
 
 import java.util.HashMap;
 
@@ -23,6 +24,9 @@ import static net.devtech.arrp.api.RuntimeResourcePack.id;
 import static net.devtech.arrp.json.loot.JLootTable.*;
 import static net.devtech.arrp.json.blockstate.JState.*;
 import static net.devtech.arrp.json.models.JModel.*;
+import static net.redd.lawnage.Main.LOGGER;
+
+
 
 public class SimpleRegistry {
 
@@ -45,10 +49,21 @@ public class SimpleRegistry {
 
         if(customModel != null){
             Main.LAWNAGE_PACK.addModel(customModel,id);
+            LOGGER.log(Level.INFO, "bypassing model: block/" + id.getPath());
         }
         else {
-            JModel model = model().textures(textures().var("all", "block/" + id.getPath()).particle(id.getNamespace() +":block/" + id.getPath())).parent("block/cube_all");
-            System.out.println("Adding model: " + id);
+            LOGGER.log(Level.INFO, "LAWNAGE BABY               USING MODDEL: block/" + id.getPath());
+//            JState model = state(variant(JState.model("block/" + id.getPath())));
+//            JState state = state(multipart(JState.model("lawnage:block/" + id.getPath())),
+//                    JState.variant("facing=west", ),
+//                    multipart(JState.model("lawnage:block/" + id.getPath()).uvlock()).when(when().add("facing", "south")),
+//                    multipart(JState.model("lawnage:block/" + id.getPath()).y(90).uvlock()).when(when().add("facing", "west")),
+//                    multipart(JState.model("lawnage:block/" + id.getPath()).y(180).uvlock()).when(when().add("facing", "north")),
+//                    multipart(JState.model("lawnage:block/" + id.getPath()).y(270).uvlock()).when(when().add("facing", "east")));
+
+
+//            JModel model = model().textures(textures().var("all", "lawnage:block/" + id.getPath()).particle(id.getNamespace() +":block/" + id.getPath()))
+//
 //                    .element(element().from(0, 0, 0).to(16, 16, 16)
 //                            .faces(faces()
 //                                    .down(face("all").cullface(Direction.DOWN).uv(0,0,16,16))
@@ -59,7 +74,9 @@ public class SimpleRegistry {
 //                                    .east(face("all").cullface(Direction.EAST).uv(0,0,16,16))
 //                            )
 //                    );
-            Main.LAWNAGE_PACK.addModel(model ,id);
+//            System.out.println( "lawnage:block/" + id.getPath());
+//            Main.LAWNAGE_PACK.addModel(model ,id);
+//            Main.LAWNAGE_PACK.addBlockState(state,id);
 
         }
 
