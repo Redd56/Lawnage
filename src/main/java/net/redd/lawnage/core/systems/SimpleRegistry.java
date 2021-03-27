@@ -1,6 +1,6 @@
 package net.redd.lawnage.core.systems;
 
-import net.devtech.arrp.json.blockstate.JBlockModel;
+import net.devtech.arrp.json.blockstate.JState;
 import net.devtech.arrp.json.models.JModel;
 import net.devtech.arrp.json.recipe.JRecipe;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -19,6 +19,9 @@ import java.util.HashMap;
 
 import static net.devtech.arrp.api.RuntimeResourcePack.id;
 import static net.devtech.arrp.json.loot.JLootTable.*;
+import static net.devtech.arrp.json.blockstate.JState.*;
+import static net.devtech.arrp.json.models.JModel.textures;
+import static net.devtech.arrp.json.models.JModel.faces;
 
 public class SimpleRegistry {
 
@@ -42,9 +45,10 @@ public class SimpleRegistry {
         if(customModel != null){
             Main.LAWNAGE_PACK.addModel(customModel,id);
         }
-//        else {
-//            Main.LAWNAGE_PACK.addModel(,id);
-//        }
+        else {
+            Main.LAWNAGE_PACK.addModel(,id);
+
+        }
 
     }
     public static void registerRecipe(Identifier id, JRecipe recipe){
