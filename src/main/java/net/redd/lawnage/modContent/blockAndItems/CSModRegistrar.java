@@ -2,8 +2,8 @@ package net.redd.lawnage.modContent.blockAndItems;
 
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
-import net.minecraft.block.MaterialColor;
 import net.minecraft.sound.BlockSoundGroup;
 import net.redd.lawnage.core.systems.SimpleRegistry;
 import net.redd.lawnage.modContent.recipes.CinderscapesRecipes;
@@ -26,7 +26,7 @@ public class CSModRegistrar extends ModRegistrar {
     public static HashMap<String, LawnVariantSettings> variants = new HashMap<>();
 
     static {
-        variants.put("umbral_nylium_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.BLUE, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 0,true));
+        variants.put("umbral_nylium_lawn", new LawnVariantSettings(Material.STONE, MapColor.BLUE, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 0,true));
 
     }
 
@@ -38,10 +38,14 @@ public class CSModRegistrar extends ModRegistrar {
         }
         LOGGER.log(Level.INFO, "LAWNAGE: Registering variants from mod cinderscapes addon");
         for(String variant : variants.keySet()){
-//            LOGGER.log(Level.INFO, "LAWNAGE: Registering variant cinderscapes:" + variant);
+            LOGGER.log(Level.INFO, "LAWNAGE: Registering variant cinderscapes:" + variant);
             LawnVariantSettings lvs = variants.get(variant);
             SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.toolLevel, lvs.color, lvs.requiresTool);
-            SimpleRegistry.registerLootTable(variant, "lawnage:"+ variant, "minecraft:item");
+            if(lvs.hasCustomDrop()){
+                SimpleRegistry.registerLootTable(variant, lvs.lootIdentifier, lvs.lootType);
+            } else {
+                SimpleRegistry.registerLootTable(variant, "lawnage:"+ variant, "minecraft:item");
+            }
         }
         CinderscapesRecipes.INSTANCE.registerRecipes();
     }

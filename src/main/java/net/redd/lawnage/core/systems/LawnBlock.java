@@ -8,7 +8,7 @@ import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 
 public class LawnBlock extends HorizontalFacingBlock {
-    public LawnBlock(AbstractBlock.Settings settings) {
+    public LawnBlock(Settings settings) {
         super(settings);
     }
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
