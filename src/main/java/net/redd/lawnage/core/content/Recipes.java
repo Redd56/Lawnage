@@ -64,6 +64,15 @@ public class Recipes extends RecipeLoader {
                                     .add(
                                             JIngredient.ingredient()
                                                     .item(Items.GRASS_BLOCK)
+                                    ),
+                            JResult.item(get("grass_lawn").asItem())
+                    ));
+        }
+        {
+            SimpleRegistry.registerRecipe(new Identifier(mod_id, "grass_shapeless_3"), JRecipe.shapeless
+                    (JIngredients.ingredients()
+                                    .add(
+                                            JIngredient.ingredient()
                                                     .item("byg:meadow_grass_block")
                                     ),
                             JResult.item(get("grass_lawn").asItem())
