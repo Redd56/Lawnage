@@ -1,6 +1,7 @@
 package net.redd.lawnage.core.systems;
 
 import net.devtech.arrp.json.blockstate.JState;
+import net.devtech.arrp.json.blockstate.JVariant;
 import net.devtech.arrp.json.models.JModel;
 import net.devtech.arrp.json.models.JTextures;
 import net.devtech.arrp.json.recipe.JRecipe;
@@ -52,10 +53,10 @@ public class SimpleRegistry {
             LOGGER.log(Level.INFO, "bypassing model: block/" + id.getPath());
         }
         else {
-            LOGGER.log(Level.INFO, "LAWNAGE BABY               USING MODDEL: block/" + id.getPath());
+//            LOGGER.log(Level.INFO, "LAWNAGE BABY               USING MODDEL: block/" + id.getPath());
 //            JState model = state(variant(JState.model("block/" + id.getPath())));
 //            JState state = state(multipart(JState.model("lawnage:block/" + id.getPath())),
-//                    JState.variant("facing=west", ),
+//                    JVariant("",),
 //                    multipart(JState.model("lawnage:block/" + id.getPath()).uvlock()).when(when().add("facing", "south")),
 //                    multipart(JState.model("lawnage:block/" + id.getPath()).y(90).uvlock()).when(when().add("facing", "west")),
 //                    multipart(JState.model("lawnage:block/" + id.getPath()).y(180).uvlock()).when(when().add("facing", "north")),
