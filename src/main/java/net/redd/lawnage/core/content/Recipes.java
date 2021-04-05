@@ -214,6 +214,18 @@ public class Recipes extends RecipeLoader {
             ));
 
         }
+        //Moss
+        {
+            SimpleRegistry.registerRecipe(new Identifier(mod_id, "moss_shapeless_0"), JRecipe.shapeless
+                    (JIngredients.ingredients()
+                                    .add(
+                                            JIngredient.ingredient()
+                                                    .item(Items.MOSS_BLOCK)
+                                    ),
+                            JResult.item(get("moss_lawn").asItem())
+
+                    ));
+        }
 
     }
 
