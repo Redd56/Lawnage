@@ -28,8 +28,8 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	compile files('libs/bn-dev.jar')
-	compile files('libs/be-dev.jar')
+	//compile files('libs/bn-dev.jar')
+	//compile files('libs/be-dev.jar')
 
 	//arrp
 	modImplementation group: 'net.devtech', name: 'arrp', version: '0.3.7'

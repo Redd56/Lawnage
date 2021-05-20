@@ -1,6 +1,5 @@
 package net.redd.lawnage.core.content;
 
-
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
@@ -13,6 +12,7 @@ import org.apache.logging.log4j.Level;
 import java.util.HashMap;
 
 import static net.redd.lawnage.Main.LOGGER;
+
 
 public class BlocksAndItems extends ModRegistrar {
 
