@@ -11,12 +11,6 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
-	mavenCentral()
-	maven { url "https://maven.shedaniel.me/" }
-	maven {
-		name = "AperLambda"
-		url = 'https://aperlambda.github.io/maven'
-	}
 	maven {
 		url = 'https://raw.githubusercontent.com/Devan-Kerman/Devan-Repo/master/'
 	}
@@ -34,10 +28,9 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-
-
 	compile files('libs/bn-dev.jar')
 	compile files('libs/be-dev.jar')
+
 	//arrp
 	modImplementation group: 'net.devtech', name: 'arrp', version: '0.3.7'
 }
