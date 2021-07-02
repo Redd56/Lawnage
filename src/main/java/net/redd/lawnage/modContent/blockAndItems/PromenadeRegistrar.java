@@ -7,6 +7,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.redd.lawnage.core.systems.SimpleRegistry;
 import net.redd.lawnage.core.systems.LawnVariantSettings;
 import net.redd.lawnage.core.systems.ModRegistrar;
+import net.redd.lawnage.modContent.recipes.PromenadeRecipes;
 import org.apache.logging.log4j.Level;
 
 import java.util.HashMap;
@@ -23,7 +24,7 @@ public class PromenadeRegistrar extends ModRegistrar {
     private PromenadeRegistrar(){}
 
     static  {
-        variants.put("black_dylium",new LawnVariantSettings(Material.STONE, Material.SOLID_ORGANIC.getColor(), 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+        variants.put("black_dylium_lawn",new LawnVariantSettings(Material.STONE, Material.SOLID_ORGANIC.getColor(), 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
     }
 
     @Override
@@ -32,8 +33,8 @@ public class PromenadeRegistrar extends ModRegistrar {
             LOGGER.log(Level.INFO, "You don't seem to be a Wild Explorer. ;-;");
             return;
         }
-        LOGGER.log(Level.INFO, "¡A WILD EXPLORER HAS BEEN DETECTED!");
-        LOGGER.log(Level.INFO, "¡EXECUTING DYLIUMIFICATION!");
+        LOGGER.log(Level.INFO, "LAWNAGE: ¡PROMENADE HAS BEEN DETECTED!");
+        LOGGER.log(Level.INFO, "LAWNAGE: ¡EXECUTING DYLIUMIFICATION!");
         for(String variant : variants.keySet()){
 //            LOGGER.log(Level.INFO, "Registering variant wild explorer:" + variant);
             LawnVariantSettings lvs = variants.get(variant);
@@ -44,5 +45,6 @@ public class PromenadeRegistrar extends ModRegistrar {
                 SimpleRegistry.registerLootTable(variant, "lawnage:"+ variant, "minecraft:item");
             }
         }
+        PromenadeRecipes.INSTANCE.registerRecipes();
     }
 }

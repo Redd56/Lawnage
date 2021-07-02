@@ -32,7 +32,7 @@ dependencies {
 	//compile files('libs/be-dev.jar')
 
 	//arrp
-	modImplementation group: 'net.devtech', name: 'arrp', version: '0.3.7'
+	modImplementation group: 'net.devtech', name: 'arrp', version: '0.4.2'
 }
 
 processResources {
