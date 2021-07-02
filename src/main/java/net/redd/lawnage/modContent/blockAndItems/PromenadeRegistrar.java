@@ -13,14 +13,14 @@ import java.util.HashMap;
 
 import static net.redd.lawnage.Main.LOGGER;
 
-public class WildExplorerRegistrar extends ModRegistrar {
-    static { mod_id = "wild_explorer"; }
+public class PromenadeRegistrar extends ModRegistrar {
+    static { mod_id = "promenade"; }
 
-    public static WildExplorerRegistrar INSTANCE = new WildExplorerRegistrar();
+    public static PromenadeRegistrar INSTANCE = new PromenadeRegistrar();
 
     public static HashMap<String, LawnVariantSettings> variants = new HashMap<>();
 
-    private WildExplorerRegistrar(){}
+    private PromenadeRegistrar(){}
 
     static  {
         variants.put("black_dylium",new LawnVariantSettings(Material.STONE, Material.SOLID_ORGANIC.getColor(), 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
