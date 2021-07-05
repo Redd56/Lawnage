@@ -12,7 +12,7 @@ group = project.maven_group
 
 repositories {
 	maven {
-		url = 'https://raw.githubusercontent.com/Devan-Kerman/Devan-Repo/master/'
+		url = uri("https://storage.googleapis.com/devan-maven/")
 	}
 	flatDir {
 		dirs 'libs'
@@ -32,7 +32,8 @@ dependencies {
 	//compile files('libs/be-dev.jar')
 
 	//arrp
-	modImplementation group: 'net.devtech', name: 'arrp', version: '0.4.2'
+	modImplementation "net.devtech:arrp:0.4.3"
+	include "net.devtech:arrp:0.4.3"
 }
 
 processResources {
