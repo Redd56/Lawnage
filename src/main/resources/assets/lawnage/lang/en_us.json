@@ -19,5 +19,7 @@
   "block.lawnage.shulkren_phylium_lawn"   :     "Shulkren Phylium Lawn",
   "block.lawnage.nightshade_phylium_lawn" :     "Nightshade Phylium Lawn",
 
+  "block.lawnage.netherrack_moss_lawn"    :     "Nether Moss Lawn",
+
   "itemGroup.lawnage.lawnage"             :     "Lawnage"
 }

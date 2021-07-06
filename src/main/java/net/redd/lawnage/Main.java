@@ -6,6 +6,8 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.redd.lawnage.core.content.BlocksAndItems;
 import net.redd.lawnage.modContent.blockAndItems.*;
@@ -27,6 +29,7 @@ public class Main implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
 		/*
 		 * Register blocks
 		*/
@@ -34,7 +37,7 @@ public class Main implements ModInitializer {
 //		BYGModRegistrar.INSTANCE.registerVariants();
 //		CSModRegistrar.INSTANCE.registerVariants();
 //		BEModRegistrar.INSTANCE.registerVariants();
-//		BnModRegistrar.INSTANCE.registerVariants();
+		BnModRegistrar.INSTANCE.registerVariants();
 		PromenadeRegistrar.INSTANCE.registerVariants();
 
 		RRPCallback.EVENT.register(a -> a.add(LAWNAGE_PACK));
