@@ -6,6 +6,10 @@
     {
       "id": "lawnage:umbral_nylium_lawn",
       "required": false
+    },
+    {
+      "id": "lawnage:black_dylium_lawn",
+      "required": false
     }
   ]
 }

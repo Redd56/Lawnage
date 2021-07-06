@@ -3,7 +3,6 @@ package net.redd.lawnage.modContent.blockAndItems;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Material;
-import net.minecraft.block.MaterialColor;
 import net.minecraft.sound.BlockSoundGroup;
 import net.redd.lawnage.core.systems.SimpleRegistry;
 import net.redd.lawnage.core.systems.LawnVariantSettings;
@@ -24,13 +23,18 @@ public class BnModRegistrar extends ModRegistrar {
     public static HashMap<String, LawnVariantSettings> variants = new HashMap<>();
 
     static {
-        variants.put("nether_moss_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.BLACK, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
-        variants.put("jungle_grass_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
-        variants.put("swampland_grass_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
-        variants.put("bn_mushroom_grass_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
-        variants.put("sepian_mushroom_grass_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+        variants.put("sangnum_lawn", new LawnVariantSettings(Material.STONE, Material.SOLID_ORGANIC.getColor(), 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+//        variants.put("end_mycelium", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+//        variants.put("end_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+//        variants.put("chorus_nylium", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+//        variants.put("cave_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+//        variants.put("crystal_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+//        variants.put("shadow_grass", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+//        variants.put("pink_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+//        variants.put("amber_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+//        variants.put("jungle_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+//        variants.put("rutiscis", new LawnVariantSettings(Material.STONE, MaterialColor.SAND, 3.0F, BlockSoundGroup.STONE, FabricToolTags.PICKAXES, 1,true));
     }
-
 
     @Override
     public void registerVariants() {
@@ -40,18 +44,14 @@ public class BnModRegistrar extends ModRegistrar {
         }
         LOGGER.log(Level.INFO, "Registering variants from mod better end");
         for(String variant : variants.keySet()){
-//            LOGGER.log(Level.INFO, "Registering variant better end:" + variant);
+            LOGGER.log(Level.INFO, "Registering variant better end:" + variant);
             LawnVariantSettings lvs = variants.get(variant);
-            if(lvs.hasCustomModel){
-                SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.toolLevel, lvs.color, lvs.requiresTool, lvs.customModel);
-            } else {
-                SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.toolLevel, lvs.color, lvs.requiresTool);
-            }
+            SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.toolLevel, lvs.color, lvs.requiresTool);
             if(lvs.hasCustomDrop()){
                 SimpleRegistry.registerLootTable(variant, lvs.lootIdentifier, lvs.lootType);
             } else {
                 SimpleRegistry.registerLootTable(variant,"lawnage:" + variant, "minecraft:item");
-            }//test
+            }
         }
     }
 
