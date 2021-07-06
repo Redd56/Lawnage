@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "lawnage:block/netherrack_moss_lawn"
+  }
+}
