@@ -26,8 +26,8 @@ public class BlocksAndItems extends ModRegistrar {
     public static HashMap<String, LawnVariantSettings> variants = new HashMap<>();
 
     static {
-        variants.put("grass_lawn",new LawnVariantSettings( Material.SOIL, MapColor.GRASS,0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, 1, false));
-        variants.put("biome_grass_lawn",new LawnVariantSettings( Material.SOIL, MapColor.GRASS, 0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, 1,false));
+        variants.put("grass_lawn",new LawnVariantSettings( Material.SOIL, Material.SOLID_ORGANIC.getColor(),0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, 1, false));
+        variants.put("biome_grass_lawn",new LawnVariantSettings( Material.SOIL, Material.SOLID_ORGANIC.getColor(), 0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, 1,false));
         variants.put("mushroom_lawn",new LawnVariantSettings( Material.SOIL, MapColor.PURPLE,0.6f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, 1, false));
         variants.put("warped_nylium_lawn", new LawnVariantSettings( Material.STONE, MapColor.field_25705,0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1, true));
         variants.put("crimson_nylium_lawn",new LawnVariantSettings( Material.STONE, MapColor.field_25702,  0.4f,  BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
