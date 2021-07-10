@@ -2,8 +2,10 @@ package net.redd.lawnage;
 
 import net.devtech.arrp.api.RRPCallback;
 import net.devtech.arrp.api.RuntimeResourcePack;
+import net.fabricmc.api.EnvType;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -14,8 +16,11 @@ import org.apache.logging.log4j.Logger;
 
 import static net.redd.lawnage.core.systems.SimpleRegistry.*;
 
+
+
 public class Main implements ModInitializer {
 
+	public static boolean isClient = (FabricLoader.getInstance().getEnvironmentType().equals(EnvType.CLIENT));
 	public static Logger LOGGER = LogManager.getLogger();
 
 	public static Identifier IDENTIFIER = new Identifier("lawnage", "lawnage");
@@ -27,6 +32,7 @@ public class Main implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
 		/*
 		 * Register blocks
 		*/

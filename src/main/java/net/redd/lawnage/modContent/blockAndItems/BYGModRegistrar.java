@@ -5,12 +5,14 @@ import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Material;
 import net.minecraft.sound.BlockSoundGroup;
 import net.redd.lawnage.core.systems.SimpleRegistry;
+import net.redd.lawnage.modContent.extras.BYGExtras;
 import net.redd.lawnage.modContent.recipes.BYGRecipes;
 import net.redd.lawnage.core.systems.LawnVariantSettings;
 import net.redd.lawnage.core.systems.ModRegistrar;
 import org.apache.logging.log4j.Level;
 
 import static net.redd.lawnage.Main.LOGGER;
+import static net.redd.lawnage.Main.isClient;
 
 import java.util.HashMap;
 
@@ -53,6 +55,12 @@ public class BYGModRegistrar extends ModRegistrar {
             }
         }
         BYGRecipes.INSTANCE.registerRecipes();
+        if (isClient) {
+            BYGExtras.INSTANCE.initBYGBiomeColors();
+        }
+        else{
+            LOGGER.log(Level.INFO,"LAWNAGE: skipping byg extras a for the same reason as base.");
+        }
     }
 
 

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "lawnage:block/netherrack_moss_lawn",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "lawnage:block/netherrack_moss_lawn",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "lawnage:block/netherrack_moss_lawn"
+    },
+    "facing=west": {
+      "model": "lawnage:block/netherrack_moss_lawn",
+      "y": 90
+    }
+  }
+}
