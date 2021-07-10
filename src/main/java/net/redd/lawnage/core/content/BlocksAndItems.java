@@ -13,6 +13,7 @@ import org.apache.logging.log4j.Level;
 import java.util.HashMap;
 
 import static net.redd.lawnage.Main.LOGGER;
+import static net.redd.lawnage.Main.isClient;
 
 public class BlocksAndItems extends ModRegistrar {
 
@@ -49,8 +50,12 @@ public class BlocksAndItems extends ModRegistrar {
             }
         }
         Recipes.INSTANCE.registerRecipes();
-        Extras.INSTANCE.initBiomeColors();
-
+        if (isClient) {
+            Extras.INSTANCE.initBiomeColors();
+        }
+        else{
+            LOGGER.log(Level.INFO,"LAWNAGE: this is a server, i dont think im gonna load the stuff that is meant for a client to use.......  ");
+        }
 
     }
 
