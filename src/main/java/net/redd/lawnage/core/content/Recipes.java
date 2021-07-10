@@ -64,15 +64,6 @@ public class Recipes extends RecipeLoader {
                                     .add(
                                             JIngredient.ingredient()
                                                     .item(Items.GRASS_BLOCK)
-                                    ),
-                            JResult.item(get("grass_lawn").asItem())
-                    ));
-        }
-        {
-            SimpleRegistry.registerRecipe(new Identifier(mod_id, "grass_shapeless_3"), JRecipe.shapeless
-                    (JIngredients.ingredients()
-                                    .add(
-                                            JIngredient.ingredient()
                                                     .item("byg:meadow_grass_block")
                                     ),
                             JResult.item(get("grass_lawn").asItem())
@@ -213,18 +204,6 @@ public class Recipes extends RecipeLoader {
                     JResult.itemStack(get("crimson_nylium_lawn").asItem(), 8)
             ));
 
-        }
-        //Moss
-        {
-            SimpleRegistry.registerRecipe(new Identifier(mod_id, "moss_shapeless_0"), JRecipe.shapeless
-                    (JIngredients.ingredients()
-                                    .add(
-                                            JIngredient.ingredient()
-                                                    .item(Items.MOSS_BLOCK)
-                                    ),
-                            JResult.item(get("moss_lawn").asItem())
-
-                    ));
         }
 
     }

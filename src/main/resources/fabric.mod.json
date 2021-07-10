@@ -7,7 +7,7 @@
   "description": "This mod adds the lawn block. It is heavily inspired by the mod OffLawn! by Rhodox\n Huge thanks to @Whangd00dle#0108 on discord for all his help with my various questions along the way while making this mod. Genuinely helped tons!",
 
   "authors": [
-    "Redd, Kyle (Kwright02), and Fran. Translations by Kitsune Alex (DE) and Wolfie (pl be)"
+    "Redd, and Kyle (Kwright02)"
   ],
   "contact": {
     "homepage": "",
@@ -28,10 +28,9 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.11.3",
+    "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "1.17.x",
-    "java": ">=16"
+    "minecraft": "1.16.x"
   },
   "suggests": {
     "another-mod": "*"

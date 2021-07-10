@@ -1,5 +1,6 @@
 package net.redd.lawnage.core.systems;
 
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
@@ -7,7 +8,7 @@ import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 
 public class LawnBlock extends HorizontalFacingBlock {
-    public LawnBlock(Settings settings) {
+    public LawnBlock(AbstractBlock.Settings settings) {
         super(settings);
     }
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
@@ -15,6 +16,6 @@ public class LawnBlock extends HorizontalFacingBlock {
     }
 
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState().with(FACING, ctx.getPlayerFacing().getOpposite());
+        return (BlockState)this.getDefaultState().with(FACING, ctx.getPlayerFacing().getOpposite());
     }
 }

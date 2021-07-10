@@ -2,9 +2,9 @@
   "required": true,
   "minVersion": "0.8",
   "package": "net.redd.lawnage.mixin",
-  "compatibilityLevel": "JAVA_16",
+  "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "CanPlaceOnTopLawnMixin"
+  "GrassLawnMixin"
   ],
   "injectors": {
     "defaultRequire": 1
