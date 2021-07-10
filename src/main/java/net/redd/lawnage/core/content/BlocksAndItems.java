@@ -4,7 +4,6 @@ package net.redd.lawnage.core.content;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
-import net.minecraft.block.MaterialColor;
 import net.minecraft.sound.BlockSoundGroup;
 import net.redd.lawnage.core.systems.ModRegistrar;
 import net.redd.lawnage.core.systems.SimpleRegistry;

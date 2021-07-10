@@ -2,8 +2,8 @@ package net.redd.lawnage.modContent.blockAndItems;
 
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
-import net.minecraft.block.MaterialColor;
 import net.minecraft.sound.BlockSoundGroup;
 import net.redd.lawnage.core.systems.SimpleRegistry;
 import net.redd.lawnage.core.systems.LawnVariantSettings;
@@ -24,11 +24,11 @@ public class BnModRegistrar extends ModRegistrar {
     public static HashMap<String, LawnVariantSettings> variants = new HashMap<>();
 
     static {
-        variants.put("nether_moss_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.BLACK, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
-        variants.put("jungle_grass_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
-        variants.put("swampland_grass_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
-        variants.put("bn_mushroom_grass_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
-        variants.put("sepian_mushroom_grass_lawn", new LawnVariantSettings(Material.STONE, MaterialColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+        variants.put("nether_moss_lawn", new LawnVariantSettings(Material.STONE, MapColor.BLACK, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+        variants.put("jungle_grass_lawn", new LawnVariantSettings(Material.STONE, MapColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+        variants.put("swampland_grass_lawn", new LawnVariantSettings(Material.STONE, MapColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+        variants.put("bn_mushroom_grass_lawn", new LawnVariantSettings(Material.STONE, MapColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+        variants.put("sepian_mushroom_grass_lawn", new LawnVariantSettings(Material.STONE, MapColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
     }
 
 
