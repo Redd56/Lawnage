@@ -2,7 +2,6 @@ package net.redd.lawnage.modContent.extras;
 
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.MapColor;
 import net.minecraft.client.color.world.BiomeColors;
 import net.redd.lawnage.core.systems.SimpleRegistry;
 import org.apache.logging.log4j.Level;
