@@ -34,10 +34,11 @@ public class SimpleRegistry {
     public static HashMap<String, Block> registeredBlocks = new HashMap<>();
     public static HashMap<String, BlockItem> registeredItems = new HashMap<>();
 
-    public static void registerBlockWithItem(String path, Material mat, float strength, BlockSoundGroup sounds, Tag<Item> toolTags, int toolLevel, MaterialColor color, boolean requiresTool){
+
+    public static void registerBlockWithItem(String path, Material mat, float strength, BlockSoundGroup sounds, Tag<Item> toolTags, int toolLevel, MapColor color, boolean requiresTool){
         registerBlockWithItem(path, mat,  strength, sounds,toolTags, toolLevel, color, requiresTool,null);
     }
-    public static void registerBlockWithItem(String path, Material mat, float strength, BlockSoundGroup sounds, Tag<Item> toolTags, int toolLevel, MaterialColor color, boolean requiresTool, JModel customModel){
+    public static void registerBlockWithItem(String path, Material mat, float strength, BlockSoundGroup sounds, Tag<Item> toolTags, int toolLevel, MapColor color, boolean requiresTool, JModel customModel){
         Block block = (requiresTool)
                 ? new LawnBlock(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds).breakByTool(toolTags, toolLevel).requiresTool())
                 : new LawnBlock(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds).breakByTool(toolTags, toolLevel));
