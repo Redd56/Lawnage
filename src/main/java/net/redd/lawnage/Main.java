@@ -8,8 +8,6 @@ import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.redd.lawnage.core.content.BlocksAndItems;
 import net.redd.lawnage.modContent.blockAndItems.*;
