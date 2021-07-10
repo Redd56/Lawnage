@@ -2,6 +2,7 @@ package net.redd.lawnage.modContent.blockAndItems;
 
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
 import net.minecraft.sound.BlockSoundGroup;
 import net.redd.lawnage.core.systems.SimpleRegistry;
@@ -27,14 +28,14 @@ public class BYGModRegistrar extends ModRegistrar {
     public static HashMap<String, LawnVariantSettings> variants = new HashMap<>();
 
     static {
-//        variants.put("glowcelium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, 0,false));
-//        variants.put("sythian_nylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GOLD, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
-//        variants.put("embur_nylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.ORANGE, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
-//        variants.put("ether_phylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.field_25703, 0.4f, BlockSoundGroup.STONE, FabricToolTags.PICKAXES, 1,true));
-//        variants.put("shulkren_phylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.LIME, 0.4f, BlockSoundGroup.STONE, FabricToolTags.PICKAXES, 1,true));
-//        variants.put("ivis_phylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.PURPLE, 0.4f, BlockSoundGroup.STONE, FabricToolTags.PICKAXES, 1,true));
-//        variants.put("nightshade_phylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.LAPIS, 0.4f, BlockSoundGroup.STONE, FabricToolTags.PICKAXES, 1,true));
-//        variants.put("bulbis_phylium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.WHITE, 0.4f, BlockSoundGroup.STONE, FabricToolTags.PICKAXES, 1,true));
+        variants.put("glowcelium_lawn", new LawnVariantSettings(Material.SOIL, MaterialColor.GRASS, 0.4f, BlockSoundGroup.GRASS, FabricToolTags.SHOVELS, 0,false));
+        variants.put("sythian_nylium_lawn", new LawnVariantSettings(Material.SOIL, MapColor.GOLD, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+        variants.put("embur_nylium_lawn", new LawnVariantSettings(Material.SOIL,  MapColor.ORANGE, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+        variants.put("ether_phylium_lawn", new LawnVariantSettings(Material.SOIL, MapColor.field_25703, 0.4f, BlockSoundGroup.STONE, FabricToolTags.PICKAXES, 1,true));
+        variants.put("shulkren_phylium_lawn", new LawnVariantSettings(Material.SOIL, MapColor.LIME, 0.4f, BlockSoundGroup.STONE, FabricToolTags.PICKAXES, 1,true));
+        variants.put("ivis_phylium_lawn", new LawnVariantSettings(Material.SOIL, MapColor.PURPLE, 0.4f, BlockSoundGroup.STONE, FabricToolTags.PICKAXES, 1,true));
+        variants.put("nightshade_phylium_lawn", new LawnVariantSettings(Material.SOIL, MapColor.LAPIS_BLUE, 0.4f, BlockSoundGroup.STONE, FabricToolTags.PICKAXES, 1,true));
+        variants.put("bulbis_phylium_lawn", new LawnVariantSettings(Material.SOIL, MapColor.WHITE, 0.4f, BlockSoundGroup.STONE, FabricToolTags.PICKAXES, 1,true));
     }
 
     @Override

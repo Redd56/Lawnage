@@ -2,6 +2,7 @@ package net.redd.lawnage.modContent.blockAndItems;
 
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
 import net.minecraft.sound.BlockSoundGroup;
 import net.redd.lawnage.core.systems.SimpleRegistry;
@@ -23,17 +24,17 @@ public class BEModRegistrar extends ModRegistrar {
     public static HashMap<String, LawnVariantSettings> variants = new HashMap<>();
 
     static {
-//        variants.put("sangnum_lawn", new LawnVariantSettings(Material.STONE, Material.SOLID_ORGANIC.getColor(), 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
-//        variants.put("end_mycelium", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
-//        variants.put("end_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
-//        variants.put("chorus_nylium", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
-//        variants.put("cave_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
-//        variants.put("crystal_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
-//        variants.put("shadow_grass", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
-//        variants.put("pink_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
-//        variants.put("amber_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
-//        variants.put("jungle_moss", new LawnVariantSettings(Material.STONE, MaterialColor.GRASS, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
-//        variants.put("rutiscis", new LawnVariantSettings(Material.STONE, MaterialColor.SAND, 3.0F, BlockSoundGroup.STONE, FabricToolTags.PICKAXES, 1,true));
+        variants.put("sangnum_lawn", new LawnVariantSettings(Material.STONE, Material.SOLID_ORGANIC.getColor(), 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+        variants.put("end_mycelium", new LawnVariantSettings(Material.STONE, MapColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+        variants.put("end_moss", new LawnVariantSettings(Material.STONE, MapColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+        variants.put("chorus_nylium", new LawnVariantSettings(Material.STONE, MapColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+        variants.put("cave_moss", new LawnVariantSettings(Material.STONE, MapColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+        variants.put("crystal_moss", new LawnVariantSettings(Material.STONE, MapColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+        variants.put("shadow_grass", new LawnVariantSettings(Material.STONE, MapColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+        variants.put("pink_moss", new LawnVariantSettings(Material.STONE, MapColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+        variants.put("amber_moss", new LawnVariantSettings(Material.STONE, MapColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+        variants.put("jungle_moss", new LawnVariantSettings(Material.STONE, MapColor.GREEN, 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+        variants.put("rutiscis", new LawnVariantSettings(Material.STONE, MapColor.GREEN, 3.0F, BlockSoundGroup.STONE, FabricToolTags.PICKAXES, 1,true));
     }
 
     @Override
