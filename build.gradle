@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.8-SNAPSHOT'
+	id 'fabric-loom' version '0.10-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -13,6 +13,7 @@ group = project.maven_group
 repositories {
 	maven {
 		url = uri("https://storage.googleapis.com/devan-maven/")
+//		maven { url 'https://jitpack.io' }
 	}
 	flatDir {
 		dirs 'libs'
@@ -28,12 +29,15 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	//compile files('libs/bn-dev.jar')
-	//compile files('libs/be-dev.jar')
+
+	runtimeOnly fileTree('libs') { include '*.jar' }
 
 	//arrp
 	modImplementation "net.devtech:arrp:0.4.3"
 	include "net.devtech:arrp:0.4.3"
+
+	//only for during runtime not during releases
+//	implementation 'com.github.paulevsGitch:betterend:0.10.2-pre'
 }
 
 processResources {
