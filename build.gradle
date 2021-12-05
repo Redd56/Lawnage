@@ -3,8 +3,8 @@ plugins {
 	id 'maven-publish'
 }
 
-sourceCompatibility = JavaVersion.VERSION_16
-targetCompatibility = JavaVersion.VERSION_16
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
 
 archivesBaseName = project.archives_base_name
 version = project.mod_version
@@ -33,8 +33,8 @@ dependencies {
 	runtimeOnly fileTree('libs') { include '*.jar' }
 
 	//arrp
-	modImplementation "net.devtech:arrp:0.4.3"
-	include "net.devtech:arrp:0.4.3"
+	modImplementation "net.devtech:arrp:0.5.4"
+	include "net.devtech:arrp:0.5.4"
 
 	//only for during runtime not during releases
 //	implementation 'com.github.paulevsGitch:betterend:0.10.2-pre'
@@ -56,7 +56,7 @@ tasks.withType(JavaCompile).configureEach {
 	it.options.encoding = "UTF-8"
 
 	// Minecraft 1.17 (21w19a) upwards uses Java 16.
-	it.options.release = 16
+	it.options.release = 17
 }
 
 java {

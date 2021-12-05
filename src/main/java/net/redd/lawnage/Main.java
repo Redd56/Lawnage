@@ -41,7 +41,7 @@ public class Main implements ModInitializer {
 //		CSModRegistrar.INSTANCE.registerVariants();
 //		BEModRegistrar.INSTANCE.registerVariants();
 //		BnModRegistrar.INSTANCE.registerVariants();
-		PromenadeRegistrar.INSTANCE.registerVariants();
+//		PromenadeRegistrar.INSTANCE.registerVariants();
 
 		RRPCallback.EVENT.register(a -> a.add(LAWNAGE_PACK));
 	}
