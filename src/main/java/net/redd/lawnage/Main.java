@@ -10,7 +10,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.redd.lawnage.core.content.BlocksAndItems;
-import net.redd.lawnage.modContent.blockAndItems.*;
+//import net.redd.lawnage.modContent.blockAndItems.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -24,7 +24,6 @@ public class Main implements ModInitializer {
 	public static Logger LOGGER = LogManager.getLogger();
 
 	public static Identifier IDENTIFIER = new Identifier("lawnage", "lawnage");
-
 	public static final ItemGroup LAWNAGE = FabricItemGroupBuilder.build(IDENTIFIER,
 			() -> new ItemStack(get("grass_lawn")));
 
@@ -43,7 +42,8 @@ public class Main implements ModInitializer {
 //		BnModRegistrar.INSTANCE.registerVariants();
 //		PromenadeRegistrar.INSTANCE.registerVariants();
 
-		RRPCallback.EVENT.register(a -> a.add(LAWNAGE_PACK));
+
+		RRPCallback.BEFORE_VANILLA.register(a -> a.add(LAWNAGE_PACK));
 	}
 
 

@@ -2,9 +2,7 @@ package net.redd.lawnage.core.systems;
 
 import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
-import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.tag.Tag;
 
 public class LawnVariantSettings {
 
