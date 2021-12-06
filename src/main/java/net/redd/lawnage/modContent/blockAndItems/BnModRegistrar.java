@@ -27,7 +27,7 @@ public class BnModRegistrar extends ModRegistrar {
     public static HashMap<String, LawnVariantSettings> variants = new HashMap<>();
 
     static {
-        variants.put("netherrack_moss_lawn", new LawnVariantSettings(Material.STONE, Material.SOLID_ORGANIC.getColor(), 0.4f, BNBlockSoundGroup.BN_TERRAIN, FabricToolTags.PICKAXES, 1,true));
+//        variants.put("netherrack_moss_lawn", new LawnVariantSettings(Material.STONE, Material.SOLID_ORGANIC.getColor(), 0.4f, BNBlockSoundGroup.BN_TERRAIN, FabricToolTags.PICKAXES, 1,true));
         }
 
     @Override
@@ -41,7 +41,7 @@ public class BnModRegistrar extends ModRegistrar {
         for(String variant : variants.keySet()){
             LOGGER.log(Level.INFO, "LAWANGE: Registering variant better nether:" + variant);
             LawnVariantSettings lvs = variants.get(variant);
-            SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.toolLevel, lvs.color, lvs.requiresTool);
+            SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.color, lvs.requiresTool);
             if(lvs.hasCustomDrop()){
                 SimpleRegistry.registerLootTable(variant, lvs.lootIdentifier, lvs.lootType);
             } else {

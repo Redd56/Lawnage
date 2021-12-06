@@ -24,7 +24,7 @@ public class PromenadeRegistrar extends ModRegistrar {
     private PromenadeRegistrar(){}
 
     static  {
-        variants.put("black_dylium_lawn",new LawnVariantSettings(Material.STONE, Material.SOLID_ORGANIC.getColor(), 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
+//        variants.put("black_dylium_lawn",new LawnVariantSettings(Material.STONE, Material.SOLID_ORGANIC.getColor(), 0.4f, BlockSoundGroup.NYLIUM, FabricToolTags.PICKAXES, 1,true));
     }
 
     @Override
@@ -38,7 +38,7 @@ public class PromenadeRegistrar extends ModRegistrar {
         for(String variant : variants.keySet()){
 //            LOGGER.log(Level.INFO, "Registering variant wild explorer:" + variant);
             LawnVariantSettings lvs = variants.get(variant);
-            SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.tool, lvs.toolLevel, lvs.color, lvs.requiresTool);
+            SimpleRegistry.registerBlockWithItem(variant, lvs.mat, lvs.strength, lvs.sound, lvs.color, lvs.requiresTool);
             if(lvs.hasCustomDrop()){
                 SimpleRegistry.registerLootTable(variant, lvs.lootIdentifier, lvs.lootType);
             } else {

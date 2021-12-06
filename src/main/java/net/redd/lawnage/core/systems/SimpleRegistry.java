@@ -5,9 +5,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.tag.Tag;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.redd.lawnage.Main;
@@ -23,10 +21,10 @@ public class SimpleRegistry {
     public static HashMap<String, Block> registeredBlocks = new HashMap<>();
     public static HashMap<String, BlockItem> registeredItems = new HashMap<>();
 
-    public static void registerBlockWithItem(String path, Material mat, float strength, BlockSoundGroup sounds, Tag<Item> toolTags, int toolLevel, MapColor color, boolean requiresTool){
+    public static void registerBlockWithItem(String path, Material mat, float strength, BlockSoundGroup sounds, MapColor color, boolean requiresTool){
         Block block = (requiresTool)
-                ? new LawnBlock(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds).breakByTool(toolTags, toolLevel).requiresTool())
-                : new LawnBlock(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds).breakByTool(toolTags, toolLevel));
+                ? new LawnBlock(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds).requiresTool())
+                : new LawnBlock(FabricBlockSettings.of(mat, color).strength(strength).sounds(sounds));
         Identifier id = new Identifier("lawnage", path);    
         BlockItem bi = new BlockItem(block, new FabricItemSettings().group(Main.LAWNAGE));
         Registry.register(Registry.BLOCK, id, block);
@@ -52,5 +50,6 @@ public class SimpleRegistry {
     }
 
     public static Block get(String path) { return registeredBlocks.get(path); }
+
 
 }
