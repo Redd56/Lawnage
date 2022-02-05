@@ -30,7 +30,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 
-	runtimeOnly fileTree('libs') { include '*.jar' }9
+	runtimeOnly fileTree('libs') { include '*.jar' }
 
 	//arrp
 	modImplementation "net.devtech:arrp:0.5.4"
