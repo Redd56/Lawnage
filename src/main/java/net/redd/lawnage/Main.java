@@ -11,6 +11,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.redd.lawnage.core.content.BlocksAndItems;
 //import net.redd.lawnage.modContent.blockAndItems.*;
+import net.redd.lawnage.modContent.blockAndItems.BEModRegistrar;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
